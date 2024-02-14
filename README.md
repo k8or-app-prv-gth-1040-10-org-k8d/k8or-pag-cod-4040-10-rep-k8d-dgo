@@ -1,2 +1,180 @@
-# k8or-pag-cod-4040-10-rep-k8d-dgo
- This repository contains microservice code files for the pages under k8or.com.
+# Versioning:
+	- home page template:
+		- v1 - tensorflow
+		- v2 - k8or, file name: index-v19
+
+	- subpage:
+		- v1 - tensorflow
+		- v2 - sync with the home page template; use /about/index.html as a template
+
+	- subpage components:
+		- image
+		- url for subpage
+		- navigation
+
+	- list of existing subpages:
+		- about - done
+		- api-gateway
+		- application-definition
+		- application-k8orization - done
+		- application-k8orization-example - done
+		- automation-configuration
+
+			- aws
+			- azure
+			- gcp - 
+			- ibm -
+			- oracle
+
+		- block-framework - done
+		- build-model - done
+		- buy-model - done
+		- case-study - done
+		- chaos-engineering
+
+		- chatbot-customer-requirement
+		- chatbot-technical-requirement
+
+		- cloud-native-network
+		- cloud-native-storage
+		- cloud-provider
+		- container-registry
+		- container-runtime
+		- continuous-integration
+		- continuous-optimization
+		- coordination-service-discovery
+		- database
+		- deployment-option - done
+		- deployment-option one - done
+		- deployment-option two - done
+		- deployment-option three - done
+		- deployment-option four - done
+		- feature-flagging
+
+		- financial-customer-requirement
+		- k8or-image - done
+		- k8orization - done
+		- kert - done
+		- key-management
+		- logging
+		- microservice-k8orization - done
+		- microservice-k8orization-example - done
+		- monitoring
+		- naming-convention - done
+		- numbering-convention - done
+		- open-ai - done
+		- operating-system-k8orization - done
+		- operating-system-k8orization-example - done
+		- package-k8orization - done
+		- package-k8orization-example - done
+		- k8or-cluster - done
+		- remote-procedure-call
+		- scheduling-orchestration
+		- security-compliance
+		- service-mesh
+		- service-proxy
+		- streaming-messaging
+		- tracing
+		- vocabulary - done
+		- widget-customer-requirement
+		- widget-technical-requirement
+
+
+
+
+
+	- list of subpages to create
+		- static pages:
+			- 
+			- 
+			- 
+		- argo-cd
+		- flux2
+		- keptn
+		- openkruise
+		- cicleci
+		- skycap // cloud66-oss
+		- agola-io
+		- harness
+		- mergifyio
+		- jenkinsci
+		- flagger
+		- weaveworks
+		- helm
+		- dapr
+		- kubevela
+		- kubevirt
+		- kubeplus
+		- kaniko
+		- gefyra
+		- squash
+		- sealer
+		- plural
+		- itopia-inc
+		- depot
+		- cloudevents
+		- nats-io
+		- kafka
+		- kubemq-io
+		- pulsar
+		- rabbitmq
+		- harbor
+		- kraken
+		- quay
+		- dragonflyoss
+		- open-feature
+		- flipt-io
+		- infracost
+		- kubecost
+		- opencost
+		- openzipkin
+		- grafana // grafana-tempo
+		- openllmetry
+		- pinpoint-apm
+		- tracetest
+		- choas-mesh
+		- litmuschaos
+		- chaosmeta
+		- krkn-chaos
+		- spiffe
+		- teller
+		- teleport
+		- athenz
+		- 
+		- 
+		- 
+		- 
+		- 
+		- 
+		- 
+		- 
+		- 
+		- 
+		- 
+		- 
+		- 
+		- 
+		- 
+		- 
+		- 
+		- 
+		- 
+		- 
+		- 
+		- 
+		- 
+		- 
+		- 
+		- 
+		- 
+		- 
+		- 
+		- 
+		- 
+		- 
+		- 
+		- 
+		- 
+		- 
+		- 
+		- 

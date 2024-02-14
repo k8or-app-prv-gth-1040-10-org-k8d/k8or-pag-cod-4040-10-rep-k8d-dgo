@@ -1,0 +1,79 @@
+Tailoring the kubernetes cluster with Pre-Selected Products on IBM Cloud: An In-Depth Look
+
+	Here's a detailed map and guide to building a k8or cluster using managed services on IBM Cloud Kubernetes or IKS:
+
+		Platform:
+
+			Container Orchestration: IBM Cloud Kubernetes Service (IKS) is your managed platform for deploying and managing Kubernetes clusters on IBM Cloud. It handles upgrades, patching, and scaling, making it ideal for beginners and experienced users alike.
+
+		Additional Services:
+
+			Database:
+
+				On-Premises: Leverage existing on-premises relational databases or deploy on VMs within your IKS cluster using solutions like IBM Cloud Databases for MySQL, PostgreSQL, or MongoDB.
+
+				Cloud-Based: Choose from managed database services like IBM Cloud Databases for various engines or IBM Cloud Db2 for an enterprise-grade option.
+
+			Continuous Integration/Delivery:
+
+				Open-Source: Utilize Jenkins X or Tekton within your IKS cluster for building, testing, and deploying applications. These integrate seamlessly with GitOps workflows.
+
+				Commercial: Consider IBM Cloud CodePipeline for advanced features and integration with other IBM Cloud services.
+
+			Messaging/Streaming:
+
+				On-Premises: Deploy Apache Kafka on VMs within your IKS cluster.
+
+				Cloud-Based: Utilize IBM Cloud Event Streams, a managed Kafka service.
+
+			Service Mesh:
+
+				Open-Source: Deploy Istio within your IKS cluster for service-to-service communication management.
+
+				Commercial: Explore IBM Cloud Istio for additional features and support.
+
+			API Gateway:
+
+				Open-Source: Utilize Kong or NGINX Ingress Controller within your cluster for API management and security.
+
+				Commercial: Consider IBM Cloud API Gateway for advanced features and integration with IBM Cloud offerings.
+
+			Monitoring:
+
+				Open-Source: Deploy Prometheus and Grafana within your IKS cluster for basic monitoring.
+
+				Commercial: Utilize IBM Cloud Monitoring for comprehensive metrics, logs, and event collection and analysis.
+
+			Logging:
+
+				Open-Source: Employ Fluentd for centralized log management and aggregation within your cluster.
+
+				Commercial: Explore IBM Cloud Log Analysis for advanced log management and analysis capabilities.
+
+			Storage:
+
+				On-Premises: Leverage existing on-premises storage solutions or deploy IBM Cloud Block Storage for persistent volumes.
+
+				Cloud-Based: Utilize IBM Cloud Cloud Object Storage for backups and media or choose IBM Cloud File Storage for containerized applications.
+
+			Container Registry:
+
+				Cloud-Based: Utilize IBM Cloud Container Registry (ACR) to securely store and manage container images.
+
+		Deployment Steps:
+
+			Sign up for an IBM Cloud account.
+
+			Launch an IKS cluster and set up a basic cluster using the IBM Cloud console or CLI.
+
+			Provision additional services Choose and configure relevant managed services based on your needs using the IBM Cloud console or CLI.
+
+			Deploy applications: Use kubectl or Helm to deploy your applications to the IKS cluster, leveraging container images from ACR or your chosen registry.
+
+		Additional Notes:
+
+			Consider your specific needs and preferences when choosing between open-source and commercial options.
+
+			IBM Cloud offers extensive documentation and tutorials to guide you through the deployment process.
+
+			Leverage IBM Cloud support resources for further assistance.

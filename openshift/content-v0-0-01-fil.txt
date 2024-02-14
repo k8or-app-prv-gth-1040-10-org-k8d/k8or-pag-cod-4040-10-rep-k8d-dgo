@@ -1,0 +1,83 @@
+Tailoring the kubernetes cluster with Pre-Selected Products on OpenShift: An In-Depth Look
+
+	Here's a detailed map and guide to building a k8or cluster using OpenShift and various cloud providers:
+
+		Managed Services:
+
+			Platform:
+
+				Container Orchestration: Instead of managing your own OpenShift control plane, consider Red Hat OpenShift on AWS, Red Hat OpenShift on Azure, or Red Hat OpenShift on IBM Cloud. These managed services handle upgrades, patching, and scaling, making them ideal for beginners and experienced users alike.
+
+		Additional Services:
+
+			Database:
+
+				On-Premises: Leverage existing on-premises relational databases or deploy on VMs within your OpenShift cluster using tools like Red Hat JBoss EAP.
+
+				Cloud Providers: Each cloud provider offers managed database services like RDS on AWS, Azure Database, or Cloud SQL on GCP. You can integrate these with your OpenShift cluster securely.
+
+				NoSQL: Consider managed NoSQL options like Amazon DynamoDB, Azure Cosmos DB, or Google Cloud Spanner based on your needs.
+
+			Continuous Integration/Delivery:
+
+				Open-Source: Utilize Jenkins X or Tekton for building, testing, and deploying applications to your OpenShift cluster. These integrate seamlessly with GitOps workflows.
+
+				Commercial: Explore offerings like Red Hat OpenShift Pipelines or GitLab CI/CD for advanced features and integrations.
+
+			Messaging/Streaming:
+
+				On-Premises: Deploy open-source options like Apache Kafka on VMs within your OpenShift cluster.
+
+				Cloud Providers: Utilize managed messaging services like Amazon MQ, Azure Event Hubs, or Cloud Pub/Sub on GCP.
+
+			Service Mesh:
+
+				Open-Source: Deploy Istio within your OpenShift cluster for service-to-service communication management.
+
+				Commercial: Consider Red Hat OpenShift Service Mesh for additional features and support.
+
+			API Gateway:
+
+				Open-Source: Utilize Kong or NGINX Ingress Controller for API management and security within your cluster.
+
+				Commercial: Explore Red Hat OpenShift API Management for advanced features and integration with Red Hat 3Scale.
+
+			Monitoring:
+
+				Open-Source: Deploy Prometheus and Grafana within your OpenShift cluster for comprehensive monitoring.
+
+				Commercial: Consider Red Hat OpenShift Monitoring for advanced analytics and integration with other Red Hat solutions.
+
+			Logging:
+
+				Open-Source: Employ Fluentd for centralized log management and aggregation within your cluster.
+
+				Commercial: Explore Red Hat OpenShift Logging for advanced log analysis and visualization.
+
+			Storage:
+
+				On-Premises: Utilize existing on-premises storage solutions or deploy Red Hat OpenShift Container Storage for persistent volumes.
+
+				Cloud Providers: Leverage cloud block storage services like EBS on AWS, Azure Managed Disks, or Persistent Disks on GCP.
+
+			Container Registry:
+
+				On-Premises: Set up a private registry using Red Hat Container Registry within your OpenShift cluster.
+
+				Cloud Providers: Utilize managed container registry services like Amazon ECR, Azure Container Registry, or Google Container Registry.
+
+		Deployment Steps:
+
+			Choose your Platform: Decide whether to deploy OpenShift on-premises, on a public cloud, or use a managed service offering.
+
+			Provision Infrastructure: If on-premises, set up your hardware and network infrastructure. For cloud providers, follow their specific provisioning instructions.
+
+			Install OpenShift: Deploy OpenShift using the chosen method (installer, container image, or managed service).
+
+			Configure Additional Services: Choose and configure relevant managed services based on your needs.
+
+			Deploy Applications: Use tools like oc or Helm to deploy your applications to the OpenShift cluster.
+
+		Additional Resources:
+
+			Red Hat OpenShift Documentation: The official documentation for each service offers detailed instructions and best practices.

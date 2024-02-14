@@ -1,0 +1,59 @@
+Sector 1: 
+
+The user authorization process requires accessing and verifying credentials across all necessary services: Google, AWS, Jira, Miro, Toggle Tracker, GitHub, and DockerHub.
+---------------------
+Sector 2:
+
+This sector outlines the creation of manifest files in YAML format for various Kubernetes resources.
+	- The first manifest defines a StorageClass, enabling volume creation.
+	- The second manifest creates a PersistentVolumeClaim, claiming a volume.
+	- The third manifest deploys a service with mounted volumes, exposing both /mnt and /usr directories.
+	- The fourth manifest deploys another service with mounted volumes, focusing specifically on volumes within the /usr directory.
+----------------------
+Sector 3: 
+
+Section 3 outlines the pre-deployment steps, including authorizing access to a Jump EC2 instance, establishing a connection to the EKS cluster, switching to the appropriate namespace, and verifying connectivity to the Node Group, ensuring a smooth and secure deployment process.
+---------------------------
+Sector 4:
+
+Section 4 dives into deploying the StorageClass, detailing the steps: uploading the manifest file, establishing the StorageClass itself, and the subsequent automatic volume creation, streamlining storage provisioning for your application.
+------------------------------
+Sector 5: 
+
+Section 5 outlines the deployment of the PersistentVolumeClaim (PVC), guiding you through uploading the manifest file and subsequent PVC creation. This empowers your application to request and utilize persistent storage seamlessly.
+----------------------------------
+Sector 6: 
+
+Section 6 delves into the deployment process, guiding you through applying the deployment manifest, creating the deployment resource, spawning a replica set, and finally launching individual pods, orchestrating the entire application rollout in a step-by-step manner.
+-------------------------------
+Sector 7: 
+
+Section 7 tackles automated pod storage attachment, demonstrating how to specify StorageClass and PersistentVolumeClaim information within your manifest file. This ensures seamless storage provisioning for your deployed pods.
+
+------------------------------------
+
+Sector 8: 
+
+Section 8 dives into content migration, guiding you through executing the created pod, copying all files from /usr to the mounted /mnt directory, and then verifying memory usage remains consistent across both directories. This final step confirms successful migration and data persistence within the mounted volume.
+
+----------------------------------------
+
+Sector 9: 
+Sector 9 streamlines resource removal with the deployment manifest deletion, triggering a cascading process that automatically deletes the associated pods, replica set, and ultimately the deployment itself.
+
+--------------------------------------
+
+Sector 10: 
+
+Section 10 showcases deployment with a dedicated volume for the /usr directory. It walks you through applying a deployment manifest, spawning a replica set, and launching individual pods, all configured with the mounted volume.
+
+------------------------------------------
+
+Sector 11: 
+Sector 11 focuses on automated storage provisioning for deployed pods. This triggers the automatic attachment of the storage resources to the created pod.
+
+------------------------------
+
+Sector 12: 
+
+This section details the installation process of essential software packages for the system. It covers the installation of pip, cassio, python-dotenv, llama_index, and openai. Each package installation is accompanied by the generation of log files for tracking purposes.

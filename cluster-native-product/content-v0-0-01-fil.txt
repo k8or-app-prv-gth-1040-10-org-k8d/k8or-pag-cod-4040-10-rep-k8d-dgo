@@ -1,0 +1,63 @@
+Cluster-Native Products vs. Cloud Managed Resources: Weighing Your Options
+
+	Building a containerized application environment comes with various choices, especially when it comes to managing the underlying infrastructure. This document compares two approaches: deploying cluster-native products directly on a Kubernetes cluster versus utilizing AWS managed resources. We'll analyze the pros and cons of each approach to help you make an informed decision for your specific needs.
+
+	1. Cluster-Native Products:
+
+		Pros:
+
+			Flexibility: You have complete control over the installation, configuration, and operation of each tool. This allows for customization and tailoring to your specific needs and preferences.
+
+			Open Source: Many cluster-native products are open-source, offering transparency and potential cost savings compared to proprietary solutions.
+
+			Community Support: Large communities often back open-source projects, providing extensive documentation, tutorials, and forums for troubleshooting and knowledge sharing.
+
+			Latest Innovations: Open-source development often leads to faster adoption of new features and technologies compared to managed services.
+
+		Cons:
+
+			Complexity: Managing and maintaining numerous individual products adds significant complexity to your infrastructure. This requires dedicated expertise and resources.
+
+			Security: You are responsible for securing each tool, requiring in-depth knowledge of security best practices for each product.
+
+			Monitoring and Logging: Integrating and monitoring diverse tools can be cumbersome, requiring additional effort to set up and maintain centralized observability.
+
+			Updates and Upgrades: Manually updating and upgrading each product can be time-consuming and potentially error-prone.
+
+	2. Cloud Managed Resources:
+
+		Pros:
+
+			Simplicity: Managed services handle underlying infrastructure management, including deployment, scaling, patching, and updates. This significantly reduces operational overhead.
+
+			Security: AWS manages the security of its services, adhering to strict compliance standards and best practices. This reduces your security burden.
+
+			Integration: Services seamlessly integrate with other AWS offerings, simplifying automation and workflows.
+
+			Monitoring and Logging: Built-in monitoring and logging tools provide centralized visibility into your cluster and applications.
+
+			Support: AWS offers comprehensive support for its services, including documentation, tutorials, and technical assistance.
+
+		Cons:
+
+			Vendor Lock-in: Reliance on AWS services can lock you into their platform, making it potentially difficult to migrate to other providers in the future.
+
+			Limited Customization: Managed services offer less flexibility compared to self-managed deployments, potentially restricting your ability to tailor them to specific needs.
+
+			Costs: While convenient, managed services often incur additional costs compared to open-source alternatives.
+
+	3. Conclusion:
+
+		The best approach depends on your specific requirements, skills, and resources. Consider these factors when deciding:
+
+			Technical expertise: If you have a team with Kubernetes and Linux administration experience, managing cluster-native products might be feasible.
+
+			Complexity vs. time: If simplicity and reduced operational overhead are crucial, AWS managed resources are highly appealing.
+
+			Budget: Open-source products offer potential cost savings, but factor in the cost of managing them internally.
+
+			Customization: If flexibility and tailoring to specific needs are paramount, cluster-native products provide more control.
+
+			Remember: This is not an either/or choice. You can leverage a hybrid approach, using managed services for core infrastructure like EKS and integrating them with specific self-managed cluster-native products where customization is essential.
+
+			By carefully evaluating your needs and priorities, you can choose the path that best suits your cloud journey and empowers you to build and manage a successful containerized environment.

@@ -1,0 +1,69 @@
+Tailoring a standalone k8or cluster with Pre-Selected Products: An In-Depth Look
+Deployment Platform: Runs independently on your preferred cloud platform or directly on your own hardware.
+Kubernetes encompasses a vast ecosystem of technologies categorized based on functionality. You've identified specific products within these categories to build a customized k8or cluster. Tailoring k8or clusters is an ongoing process. Let's delve into each category and explore the chosen tools:
+Application Definition and Image Build:
+kubevirt: Enables deployment of virtual machines for workloads requiring legacy OS or specific hardware access.
+dapr: Simplifies microservice development by providing sidecar-based event-driven communication and state management.
+kaniko: Builds images directly within the cluster, improving security and isolation for build processes.
+Gitpod: Offers web-based IDEs directly within Git repositories, streamlining developer workflows.
+ko: Enables building, pushing, and deploying images from within your codebase, automating the process.
+Database:
+mysql: Widely adopted relational database for structured data.
+cassandra: Distributed NoSQL database ideal for high availability and scalability.
+redis: In-memory data store providing high performance for caching and key-value storage.
+Continuous Integration and Delivery:
+argo CD: Continuous delivery tool automating application deployments from Git to Kubernetes.
+Streaming and Messaging:
+NATS: High-performance messaging system for microservice communication and event-driven architectures.
+Strimzi: Apache Kafka operator managing Kafka deployments and configurations within Kubernetes.
+Scheduling and Orchestration:
+kube-green: Canary testing tool for rolling out applications and monitoring for regressions.
+karmada: Multi-cluster management platform enabling consistent application management across clusters.
+Service Proxy:
+envoy: High-performance proxy for load balancing, traffic management, and security in microservices.
+Service Mesh:
+Linkerd: Service mesh providing service-to-service communication, traffic management, and observability.
+API Gateway:
+Emissary-Ingress: Ingress controller providing secure and managed access to applications within Kubernetes.
+Kong: API gateway offering scalability, flexibility, and advanced API management features.
+Remote Procedure Call:
+grpc: High-performance, platform-neutral RPC framework for distributed systems.
+Coordination and Service Discovery:
+CoreDNS: Highly scalable and configurable DNS server for Kubernetes environments.
+Kubebrain: Service discovery and coordination plane based on Consul for service mesh or microservice architectures.
+Cloud Native Storage:
+MinIO: Object storage solution offering S3 compatibility and scalability.
+Gluster: Distributed file system providing high availability and scalability for shared storage.
+Rook: Ceph operator simplifying deployment and management of Ceph storage within Kubernetes.
+Cloud Native Network:
+kube-vip: Virtual IP address manager for dynamic service IP assignment in Kubernetes clusters.
+CNI: Container Network Interface specification enabling various networking plugins for different network providers.
+Container Runtime:
+cri-o: Alternative container runtime offering security features and compatibility with Kubernetes CRI.
+Security and Compliance:
+cert-manager: Automatic certificate management and issuance for securing connections within Kubernetes.
+kyverno: Policy engine for enforcing security and compliance policies within Kubernetes clusters.
+opcr: Open Policy Control Rego framework for expressing and enforcing fine-grained authorization policies.
+Automation and Configuration:
+kustomize: Tool for composing Kubernetes manifests and managing environments with overlays.
+flux: GitOps tool for declarative configuration management and deployments from Git repositories.
+Key Management:
+teller: Kubernetes secret management solution with role-based access control and auditing.
+Athenz: Identity and access management platform for securing applications and services in distributed systems.
+Container Registry:
+Karken: Enterprise-grade container registry built for security, scalability, and high availability.
+Monitoring:
+Prometheus: Open-source monitoring system for collecting and aggregating metrics from applications and infrastructure.
+Grafana: Visualization tool for displaying and analyzing Prometheus metrics through dashboards and graphs.
+Logging:
+fluentd: Log aggregator and forwarder for collecting and centralizing logs from various sources.
+Tracing:
+jaeger: Distributed tracing system for monitoring and debugging microservice applications.
+Continuous Optimization:
+Crane: Platform for identifying and remediating performance bottlenecks in cloud-native applications.
+Chaos Engineering:
+krkn: Chaos engineering platform for injecting faults and simulating failures to improve system resilience.
+Feature Flagging:
+open feature: Feature management platform for controlling and rolling out new features to users gradually.
+This overview highlights the diverse tools a k8or cluster leverages and provides a starting point for deeper exploration.
+Mission accomplished! Now, let's go ahead and simplify your Kubernetes journey. Contact k8or.

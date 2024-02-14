@@ -1,0 +1,142 @@
+	:root {
+  --pink: #ffc0e0;
+  --green: #00d2b2;
+  --yellow: #ffc000;
+  --purple: #d255ff;
+  --red: #ff0000;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  background: #010e27;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: calc(100% - 64px);
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-content: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.block {
+  aspect-ratio: 1/1;
+  display: grid;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.item {
+  position: absolute;
+  opacity: 66%;
+  mix-blend-mode: hard-light;
+}
+
+#o {
+  grid-column: span 2;
+  width: 50%;
+  margin: 0 auto;
+}
+
+#b .item {
+  width: 66%;
+  height: 100%;
+  background: var(--pink);
+}
+
+#b .item:nth-child(2) {
+  width: 150%;
+  height: 66%;
+  bottom: 0;
+  right: 0;
+  border-radius: 999px;
+}
+
+#b .item:nth-child(3) {
+  width: 150%;
+  height: 50%;
+  top: 0;
+  right: 10%;
+  border-radius: 999px;
+}
+
+#l .item {
+  width: 66%;
+  height: 100%;
+  background: var(--green);
+}
+
+#l .item:nth-child(2) {
+  width: 100%;
+  height: 66%;
+  bottom: 0;
+}
+
+#o .item {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-45deg);
+  background: var(--yellow);
+}
+
+#o .item:nth-child(2) {
+  width: 33%;
+  height: 33%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#c .item {
+  width: 100%;
+  height: 100%;
+  background: var(--purple);
+  clip-path: polygon(0% 0%, 0% 100%, 50% 100%, 50% 0%);
+  transform-origin: center;
+}
+
+#c .item:first-child {
+  transform: rotate(45deg);
+}
+
+#c .item:last-child {
+  transform: rotate(-45deg);
+}
+
+#k .item {
+  width: 150%;
+  height: 150%;
+  background: var(--red);
+}
+
+#k .item:nth-child(1) {
+  transform: rotate(45deg) translate(-25%, 50%);
+}
+
+#k .item:nth-child(2) {
+  transform: rotate(45deg) translate(-80%, 0);
+}
+
+@media screen and (min-width: 600px) {
+  .wrapper {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  #o {
+    grid-column: auto;
+    width: 100%;
+    margin: 0;
+  }
+}
