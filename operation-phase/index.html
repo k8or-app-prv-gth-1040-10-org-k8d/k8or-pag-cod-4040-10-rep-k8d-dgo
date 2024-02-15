@@ -25,7 +25,7 @@
   <link rel="stylesheet" href="../design-v0-0-01-dir-k8d/app.css">
   <link rel="stylesheet" href="../design-v0-0-01-dir-k8d/prod.css">
   <link rel="stylesheet" href="../design-v0-0-01-dir-k8d/detail.css">
-  <link href="./design-v0-0-01-dir-k8d/favicon-32x32.png" rel="shortcut icon" />
+  <link href="../design-v0-0-01-dir-k8d/favicon-32x32.png" rel="shortcut icon" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
   <link rel="apple-touch-icon"
     href="../design-v0-0-01-dir-k8d/favicon-32x32.png">
@@ -34,6 +34,7 @@
     href="../design-v0-0-01-dir-k8d/opensearch.xml">
   <link rel="alternate" hreflang="en" href="https://www.k8or.com/" />
   <title>Stay tuned!</title>
+  <link rel="stylesheet" href="../design-v0-0-01-dir-k8d/block.css">
   <meta property="og:title" content="Stay tuned!">
 
   <!-- Discover k8or -->
@@ -485,7 +486,7 @@
                                 </li>
 
                                 <li class="devsite-nav-item">
-                                  <a href="https://www.k8or.com/kert/index.html" track-type="nav"
+                                  <a href="https://www.k8or.com/executive-summary/index.html" track-type="nav"
                                     track-metadata-eventdetail="https://www.k8or.com/executive-summary/index.html"
                                     track-metadata-position="nav - why k8or" track-metadata-module="tertiary nav"
                                     tooltip>
@@ -1376,12 +1377,12 @@
               <div class="widget Blog" data-version="1" id="Blog1">
                 <div class="tensorsite-container">
                   <div class="tensorsite-detail">
-                    <div class="tensorsite-detail__title"> Stay tuned! </div>
+                    <!--div class="tensorsite-detail__title"> Stay tuned! </div-->
                     <div class="tensorsite-detail__contact">
                     </div>
                     <div class="tensorsite-detail__body">
                       <a name="more"></a>
-                      <p>This page will be ready in a few days.</p>
+                      <p class="animated-title" aria-label="Stay tuned! This page will be ready in a few days."></p>
 
                       <!--h4>Purpose:</h4>
 
@@ -1463,7 +1464,7 @@
                 <div style="display: inline-flex;margin: 0 auto;">
                   <div class="linn">
                     <a class="tensorsite-content__cta tensorsite-button tensorsite-content__cta-icon tensorsite-icon--redesign-arrow--small"
-                      href="https://www.k8or.com/communication-phase/index.html"
+                      href="https://www.k8or.com/deployment-option/index.html"
                       item-id="Build recommendation systems with reinforcement learning" tabindex="-1">
                       <img style="position: relative; top: 2.5px;"
                         src="../design-v0-0-01-dir-k8d/arrow-prev-button-image-v0-0-01-fil.svg" width="20"
@@ -1473,7 +1474,7 @@
                   </div>
                   <div class="linn">
                     <a class="tensorsite-content__cta tensorsite-button tensorsite-content__cta-icon tensorsite-icon--redesign-arrow--small"
-                      href="https://www.k8or.com/white-paper/index.html"
+                      href="https://www.k8or.com/deployment-option-two/index.html"
                       item-id="Build recommendation systems with reinforcement learning" tabindex="-1">
                       <div style="display: inline-block;position: relative;bottom: 2px;">Next</div>
                       <img style="position: relative; top: 2.5px;"
@@ -1613,6 +1614,57 @@
   </script>
   <devsite-a11y-announce></devsite-a11y-announce>
 </body>
+<script>
+    let animationContainer = document.querySelector('.animated-title');
+    let textData = animationContainer.getAttribute('aria-label');
+
+    function splitWords() {
+        let splitedText = textData.split(' ');
+
+        splitedText.join('& &').split('&').forEach(function (e) {
+            let span = document.createElement('span');
+            span.classList.add('animated-word');
+            span.setAttribute('data-text', e);
+            animationContainer.appendChild(span);
+        });
+        splitLetters();
+    }
+    splitWords()
+
+
+    function splitLetters() {
+        let animatedWords = document.querySelectorAll('.animated-word');
+        animatedWords.forEach(function (e, i) {
+            e.getAttribute('data-text').split('').forEach(function (f, j) {
+                f = f == ' ' ? '&#32;' : f;
+                let span = document.createElement('span');
+                span.classList.add('animated-element');
+                span.setAttribute('aria-hidden', 'true');
+                span.innerHTML = f;
+                e.appendChild(span);
+            });
+            animate(e, i);
+        })
+    }
+
+    function animate(e, i) {
+        let wordCount = e.getAttribute('data-text').length;
+        e.style.opacity = 1;
+        e.classList.add('animate');
+    }
+
+    // Replay Button - For Demo purpose only
+    function replay() {
+        let animatedWords = document.querySelectorAll('.animated-word');
+        animatedWords.forEach(function (e, i) {
+            e.classList.remove('animate');
+            e.style.opacity = 0;
+            setTimeout(() => {
+                animate(e, i);
+            }, 500);
+        })
+    }
+</script>
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script type="text/javascript">
   var slider = $('.slider-container');
