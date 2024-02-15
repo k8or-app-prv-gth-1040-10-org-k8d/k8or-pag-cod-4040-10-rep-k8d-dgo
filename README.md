@@ -88,7 +88,7 @@
 		- flux2
 		- keptn
 		- openkruise
-		- cicleci
+		- circleci
 		- skycap // cloud66-oss
 		- agola-io
 		- harness
