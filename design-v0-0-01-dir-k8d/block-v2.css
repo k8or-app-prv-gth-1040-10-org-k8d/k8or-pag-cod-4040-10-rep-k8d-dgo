@@ -1,16 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
 
 .animated-title {
-    color: #425066;
+    color: #000000;
     font-size: 48px;
-    font-weight: 500;
-    line-height: 56px;
-    letter-spacing: -0.5px;
-    max-width: 900;
-    /*margin: 0;
-    width: 100%;*/
+    margin: 0;
+    width: 100%;
     text-align: center;
-    font-family: "Google Sans", sans-serif;
+    font-family: "Share Tech Mono", monospace;
     animation: textGlitch 3s ease-in-out infinite alternate;
 }
 
@@ -40726,7 +40722,7 @@
 @keyframes displayLetter {
     0% {
         transform: translateY(2px);
-        color: #425066;
+        color: #000;
         opacity: 0;
     }
 
@@ -40737,7 +40733,7 @@
 
     20% {
         opacity: 0;
-        color: #425066;
+        color: #000;
         transform: translateY(0px);
     }
 
@@ -40749,13 +40745,13 @@
 
     60% {
         opacity: 1;
-        color: #425066;
+        color: #000;
         transform: translateY(1px);
     }
 
     100% {
         transform: translateY(0);
-        color: #425066;
+        color: #000;
         opacity: 1;
     }
 }
