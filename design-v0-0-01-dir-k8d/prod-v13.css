@@ -5344,9 +5344,9 @@ only screen and (max-width: 1279px) and (-ms-high-contrast: active) {
 
 .tensorsite-group--5up .tensorsite-block,
 .tensorsite-group--5up .tensorsite-card {
-    flex-basis: calc(20% - 5px);
+    flex-basis: calc(20% - 30px);
     flex-shrink: 0;
-    max-width: calc(20% - 5px)
+    max-width: calc(20% - 30px)
 }
 
 @media only screen and (max-width: 1279px) {
