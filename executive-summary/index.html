@@ -321,6 +321,9 @@
     .share-icons a {
       fill: #26d926;
     }
+    .tensorsite-list__items {
+      list-style-type: disc;
+    }
 
     @media only screen and (max-width:839px) {
       .content-wrap {
@@ -1494,7 +1497,7 @@
 
                       <a name="more"></a>
 
-                      <p>For organizations embracing Kubernetes, navigating the complexities of infrastructure setup, configuration, and ongoing management can hinder optimal deployment and innovation. This document presents a comparative analysis of two approaches: k8or's pre-configured, fully managed BUY model and the traditional BUILD approach requiring manual configuration and in-house expertise. By evaluating key aspects like architectural flexibility, operational burden, security posture, and long-term resource allocation, the analysis aims to guide organizations towards the most strategic approach for their unique needs.</p>
+                      <p>For organizations embracing Kubernetes, navigating the complexities of infrastructure setup, configuration, and ongoing management can hinder optimal deployment and innovation. This document presents a comparative analysis of two approaches: k8or's pre-configured, fully managed <strong>BUY model</strong> and the traditional <strong>BUILD model</strong> requiring manual configuration and in-house expertise. By evaluating key aspects like architectural flexibility, operational burden, security posture, and long-term resource allocation, the analysis aims to guide organizations towards the most strategic approach for their unique needs.</p>
 
                       <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
                         <inline-html>
@@ -1508,14 +1511,14 @@
                         </inline-html>
                       </div>
 
-                      <ol class="tensorsite-list__items">
+                      <ul class="tensorsite-list__items">
                         <li class="tensorsite-list__item">
                           <p><code>BUY:</code> k8or offers immediate access to secure, pre-configured clusters across diverse cloud and platform environments, minimizing setup time and resource expenditure.</p>
                         </li>
                         <li class="tensorsite-list__item">
                           <p><code>BUILD:</code> Manual configuration, software installation, and network adaptation demand significant in-house expertise and resources, potentially delaying deployment timelines.</p>
                         </li>
-                      </ol>
+                      </ul>
 
                       <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
                         <inline-html>
@@ -1523,14 +1526,14 @@
                         </inline-html>
                       </div>
 
-                      <ol class="tensorsite-list__items">
+                      <ul class="tensorsite-list__items">
                         <li class="tensorsite-list__item">
                           <p><code>BUY:</code> k8or's platform-agnostic architecture enables seamless deployment on bare metal, virtual machines, or any cloud provider, ensuring flexibility and adaptability to evolving needs.</p>
                         </li>
                         <li class="tensorsite-list__item">
                           <p><code>BUILD:</code> Tightly coupled with specific platforms, traditional approaches present challenges in migrating to different environments, hindering architectural freedom and future innovation.</p>
                         </li>
-                      </ol>
+                      </ul>
 
                       <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
                         <inline-html>
@@ -1538,14 +1541,14 @@
                         </inline-html>
                       </div>
 
-                      <ol class="tensorsite-list__items">
+                      <ul class="tensorsite-list__items">
                         <li class="tensorsite-list__item">
                           <p><code>BUY:</code> k8or manages all service configurations and updates across nodes, minimizing operational efforts and allowing teams to focus on core business functionalities.</p>
                         </li>
                         <li class="tensorsite-list__item">
                           <p><code>BUILD:</code> Shared services often struggle to support diverse environments, impacting efficiency and increasing resource allocation for configuration, monitoring, and updates.</p>
                         </li>
-                      </ol>
+                      </ul>
 
                       <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
                         <inline-html>
@@ -1553,14 +1556,14 @@
                         </inline-html>
                       </div>
 
-                      <ol class="tensorsite-list__items">
+                      <ul class="tensorsite-list__items">
                         <li class="tensorsite-list__item">
                           <p><code>BUY:</code> k8or proactively applies software updates and security patches, ensuring a continuously secure and stable environment without manual intervention.</p>
                         </li>
                         <li class="tensorsite-list__item">
                           <p><code>BUILD:</code> Tracking, installing, and managing updates and patches become an in-house responsibility, potentially exposing vulnerabilities and increasing IT staffing costs.</p>
                         </li>
-                      </ol>
+                      </ul>
 
                       <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
                         <inline-html>
@@ -1568,14 +1571,14 @@
                         </inline-html>
                       </div>
 
-                      <ol class="tensorsite-list__items">
+                      <ul class="tensorsite-list__items">
                         <li class="tensorsite-list__item">
                           <p><code>BUY:</code> k8or provides over 100 out-of-the-box plugins and access to community resources, enabling easy extensibility for diverse use cases and seamless integration of advanced security, authentication, and traffic management functionalities.</p>
                         </li>
                         <li class="tensorsite-list__item">
                           <p><code>BUILD:</code> Developers might need to create redundant, custom code for new functionalities, draining resources and hampering innovation agility.</p>
                         </li>
-                      </ol>
+                      </ul>
 
                       <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
                         <inline-html>
@@ -1583,14 +1586,14 @@
                         </inline-html>
                       </div>
 
-                      <ol class="tensorsite-list__items">
+                      <ul class="tensorsite-list__items">
                         <li class="tensorsite-list__item">
                           <p><code>BUY:</code> k8or's 100% Kubernetes-native architecture and interfaces simplify management processes, minimizing the need for complex and time-consuming custom CI/CD solutions.</p>
                         </li>
                         <li class="tensorsite-list__item">
                           <p><code>BUILD:</code> Managing custom CI/CD processes can result in deployment risks, compliance challenges, and prolonged time-to-market due to increased complexity and cost.</p>
                         </li>
-                      </ol>
+                      </ul>
 
                       <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
                         <inline-html>
@@ -1598,14 +1601,14 @@
                         </inline-html>
                       </div>
 
-                      <ol class="tensorsite-list__items">
+                      <ul class="tensorsite-list__items">
                         <li class="tensorsite-list__item">
                           <p><code>BUY:</code> k8or's lightweight architecture enables instant scaling up or down to meet dynamic demand, ensuring infrastructure efficiency and rapid responsiveness to market shifts.</p>
                         </li>
                         <li class="tensorsite-list__item">
                           <p><code>BUILD:</code> Manually managing infrastructure changes and configuration adjustments for scaling often adds complexity and operational overhead, potentially hindering business agility.</p>
                         </li>
-                      </ol>
+                      </ul>
 
                       <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
                         <inline-html>
@@ -1613,16 +1616,16 @@
                         </inline-html>
                       </div>
 
-                      <ol class="tensorsite-list__items">
+                      <ul class="tensorsite-list__items">
                         <li class="tensorsite-list__item">
                           <p><code>BUY:</code> k8or offers dedicated support, eliminating the need for maintaining in-house Kubernetes specialists, reducing staffing costs and ensuring expertise availability.</p>
                         </li>
                         <li class="tensorsite-list__item">
                           <p><code>BUILD:</code> Building and maintaining in-house expertise in Kubernetes operations requires significant investment in hiring and managing skilled personnel, impacting resource allocation and budget considerations.</p>
                         </li>
-                      </ol>
+                      </ul>
 
-                      <p>For organizations seeking to minimize setup time, maximize deployment speed, ensure platform neutrality, and prioritize operational efficiency and security, k8or's buy model offers a compelling solution.</p>
+                      <p>For organizations seeking to minimize setup time, maximize deployment speed, ensure platform neutrality, and prioritize operational efficiency and security, k8or's <strong>BUY model</strong> offers a compelling solution.</p>
 
                       <h3>Mission accomplished! Now, let's go ahead and simplify your Kubernetes journey. Contact k8or.</h3>
                     <div class="cta-row" style="text-align: right;">
