@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
 
-.animated-title {
+/*.animated-title {
     color: #425066;
     font-family: "Google Sans", sans-serif;
     font-size: 20px;
@@ -15,7 +15,7 @@
     position: absolute;
     right: 0;
     top: 0
-}
+}*/
 
 .animated-title {
     font-family: "Google Sans", sans-serif;
@@ -23,28 +23,9 @@
     font-weight: 700;
     line-height: 40px;
     color: #425066;
-    margin-bottom: 12px
+    margin-bottom: 12px;
+    line-height: 26px animation: textGlitch 3s ease-in-out infinite alternate;
 }
-
-/*.animated-title span {
-    position: absolute;
-    right: 30px;
-    top: 26px
-}
-
-.animated-title span::after {
-    background-repeat: no-repeat;
-    background-size: contain;
-    content: '';
-    height: 24px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transition: -webkit-filter .2s linear;
-    transition: filter .2s linear;
-    transition: filter .2s linear, -webkit-filter .2s linear;
-    width: 24px
-}*/
 
 .animated-title span {
     display: inline-block;
