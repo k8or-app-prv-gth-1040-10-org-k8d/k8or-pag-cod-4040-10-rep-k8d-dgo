@@ -25,7 +25,7 @@
   <link rel="stylesheet" href="../design-v0-0-01-dir-k8d/app.css">
   <link rel="stylesheet" href="../design-v0-0-01-dir-k8d/prod.css">
   <link rel="stylesheet" href="../design-v0-0-01-dir-k8d/detail.css">
-  <link rel="shortcut icon" href="../design-v0-0-01-dir-k8d/favicon-32x32.png">
+  <link href="../design-v0-0-01-dir-k8d/favicon-32x32.png" rel="shortcut icon" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
   <link rel="apple-touch-icon"
     href="../design-v0-0-01-dir-k8d/favicon-32x32.png">
@@ -33,8 +33,9 @@
   <link rel="search" type="application/opensearchdescription+xml" title="k8or"
     href="../design-v0-0-01-dir-k8d/opensearch.xml">
   <link rel="alternate" hreflang="en" href="https://www.k8or.com/" />
-  <title>k8or BUILD Model</title>
-  <meta property="og:title" content="k8or BUILD Model">
+  <title>Stay tuned!</title>
+  <link rel="stylesheet" href="../design-v0-0-01-dir-k8d/block.css">
+  <meta property="og:title" content="Stay tuned!">
 
   <!-- Discover k8or -->
 
@@ -240,7 +241,7 @@
 
     .content-wrap {
       padding-top: 50px;
-      padding-bottom: 0px
+      padding-bottom: 50px
     }
 
     #buttonsr {
@@ -282,44 +283,6 @@
     #buttonsr.show {
       opacity: 1;
       visibility: visible;
-    }
-
-    .share-icons {
-      display: flex;
-      flex-direction: row;
-      list-style: none;
-      /* Remove default bullet points */
-      margin: 0;
-      /* Remove default margin */
-      padding: 0;
-      /* Remove default padding */
-    }
-
-    .share-icons li {
-      margin-right: 5px;
-      /* Add spacing between icons */
-    }
-
-    /* Optionally style individual icons */
-    .share-icons i {
-      font-size: 20px;
-      /* Example styling */
-    }
-
-    .author-info figcaption {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      /* Align text to the left */
-    }
-
-    .share-icons {
-      order: 2;
-      /* Move share icons to the end of the flexbox order */
-    }
-
-    .share-icons a {
-      fill: #26d926;
     }
 
     @media only screen and (max-width:839px) {
@@ -1414,150 +1377,48 @@
               <div class="widget Blog" data-version="1" id="Blog1">
                 <div class="tensorsite-container">
                   <div class="tensorsite-detail">
-                    <div class="container">
-                      <div class="tensorsite-detail__title"> Building an AWS EKS Cluster - Taming the Complexity Beast </div>
-
-                      <div class="combined-info"
-                        style="display: flex; flex-direction: row; justify-content: space-between;">
-                        <div class="author-info" style="display: flex; align-items: center;">
-                          <img src="../design-v0-0-01-dir-k8d/mars-marni-profile-image-v0-0-01-fil.jpg" alt="Mars Marni"
-                            width="50" height="50" style="margin-right: 10px;">
-                          <figcaption>
-                            <span class="author-name">Mars Marni</span>
-                            <time datetime="2024-02-07">February 4, 2024</time>
-                          </figcaption>
-                        </div>
-
-                        <ul class="share-icons" style="display: flex; justify-content: space-between;">
-
-                          <li>
-                            <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.k8or.com/build-model/index.html" title="Share on Facebook">
-                              <svg fill="#000" viewbox="0 0 512 512" preserveAspectRatio="xMidYMid meet" width="30" height="30">
-                                <path
-                                  d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z">
-                                </path>
-                              </svg>
-                            </a>
-                          </li>
-
-                          <li>
-                            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.k8or.com/build-model/index.html" title="Share on LinkedIn">
-                              <svg fill="#000" viewbox="0 0 512 512" preserveAspectRatio="xMidYMid meet" width="30" height="30">
-                                <path
-                                  d="M186.4 142.4c0 19-15.3 34.5-34.2 34.5 -18.9 0-34.2-15.4-34.2-34.5 0-19 15.3-34.5 34.2-34.5C171.1 107.9 186.4 123.4 186.4 142.4zM181.4 201.3h-57.8V388.1h57.8V201.3zM273.8 201.3h-55.4V388.1h55.4c0 0 0-69.3 0-98 0-26.3 12.1-41.9 35.2-41.9 21.3 0 31.5 15 31.5 41.9 0 26.9 0 98 0 98h57.5c0 0 0-68.2 0-118.3 0-50-28.3-74.2-68-74.2 -39.6 0-56.3 30.9-56.3 30.9v-25.2H273.8z">
-                                </path>
-                              </svg>
-                            </a>
-                          </li>
-
-                          <li>
-                            <a href="https://twitter.com/intent/tweet?url=https://www.k8or.com/build-model/index.html" title="Share on Twitter">
-                              <svg fill="#000" viewbox="0 0 512 512"
-                                preserveAspectRatio="xMidYMid meet" width="30" height="30">
-                                <path
-                                  d="M419.6 168.6c-11.7 5.2-24.2 8.7-37.4 10.2 13.4-8.1 23.8-20.8 28.6-36 -12.6 7.5-26.5 12.9-41.3 15.8 -11.9-12.6-28.8-20.6-47.5-20.6 -42 0-72.9 39.2-63.4 79.9 -54.1-2.7-102.1-28.6-134.2-68 -17 29.2-8.8 67.5 20.1 86.9 -10.7-0.3-20.7-3.3-29.5-8.1 -0.7 30.2 20.9 58.4 52.2 64.6 -9.2 2.5-19.2 3.1-29.4 1.1 8.3 25.9 32.3 44.7 60.8 45.2 -27.4 21.4-61.8 31-96.4 27 28.8 18.5 63 29.2 99.8 29.2 120.8 0 189.1-102.1 185-193.6C399.9 193.1 410.9 181.7 419.6 168.6z">
-                                </path>
-                              </svg>
-                            </a>
-                          </li>
-
-                          <li>
-                            <a href="mailto:?subject=Check out this article!&body=https://www.k8or.com/build-model/index.html" title="Share via Email">
-                              <svg fill="#000" viewbox="0 0 512 512"
-                                preserveAspectRatio="xMidYMid meet" width="30" height="30">
-                                <path
-                                  d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z">
-                                </path>
-                              </svg>
-                            </a>
-                          </li>
-
-                          <li>
-                            <a href="https://pinterest.com/pin/create/button/?url=https://www.k8or.com/build-model/index.html&media=https://www.k8or.com/design-v0-0-01-dir-k8d/sample-page-image-v0-0-01-fil.png" title="Share on Pinterest">
-                              <svg fill="#000" viewbox="0 0 512 512"
-                                preserveAspectRatio="xMidYMid meet" width="30" height="30">
-                                <path
-                                  d="M266.6 76.5c-100.2 0-150.7 71.8-150.7 131.7 0 36.3 13.7 68.5 43.2 80.6 4.8 2 9.2 0.1 10.6-5.3 1-3.7 3.3-13 4.3-16.9 1.4-5.3 0.9-7.1-3-11.8 -8.5-10-13.9-23-13.9-41.3 0-53.3 39.9-101 103.8-101 56.6 0 87.7 34.6 87.7 80.8 0 60.8-26.9 112.1-66.8 112.1 -22.1 0-38.6-18.2-33.3-40.6 6.3-26.7 18.6-55.5 18.6-74.8 0-17.3-9.3-31.7-28.4-31.7 -22.5 0-40.7 23.3-40.7 54.6 0 19.9 6.7 33.4 6.7 33.4s-23.1 97.8-27.1 114.9c-8.1 34.1-1.2 75.9-0.6 80.1 0.3 2.5 3.6 3.1 5 1.2 2.1-2.7 28.9-35.9 38.1-69 2.6-9.4 14.8-58 14.8-58 7.3 14 28.7 26.3 51.5 26.3 67.8 0 113.8-61.8 113.8-144.5C400.1 134.7 347.1 76.5 266.6 76.5z">
-                                </path>
-                              </svg>
-                            </a>
-                          </li>
-                        </ul>
-
-                      </div>
-
-                      <div class="tensorsite-detail__image" style="margin-top: 20px;"> <img
-                          src="../design-v0-0-01-dir-k8d/sample-page-image-v0-0-01-fil.png"
-                          width="100%" height="400" alt="Description of the image">
-                      </div>
+                    <!--div class="tensorsite-detail__title"> Stay tuned! </div-->
+                    <div class="tensorsite-detail__contact">
                     </div>
-
+                    <div class="tensorsite-detail__body">
                       <a name="more"></a>
-                      <p>Building an AWS EKS cluster from scratch is no walk in the Kubernetes park. It's an odyssey demanding mastery of K E R T - Knowledge, Expertise, Resources, and Time. While this DIY approach offers ultimate customization and control, it paints a stark contrast to the seemingly effortless BUY model. Let's delve into the intricacies of the BUILD model, using real-world EKS examples to showcase its inherent complexity:</p>
+                      <p class="animated-title" aria-label="Stay tuned! This page will be ready in a few days."></p>
+
+                      <!--h4>Purpose:</h4>
 
                       <ul class="tensorsite-list__items">
                         <li class="tensorsite-list__item">
-                          <p><code>Knowledge Labyrinth:</code> Building your EKS cluster demands navigating a labyrinth of Kubernetes concepts like pods, deployments, services, and networking models. Mastering AWS-specific offerings like managed worker nodes, Fargate, and IAM roles for service accounts adds another layer of complexity. Devouring documentation, tutorials, and courses becomes your daily bread, building a solid foundation before venturing further.</p>
+                          <p><code>Exposes devices as Kubernetes resources:</code> Akri makes various edge devices, such as IP cameras, USB devices, sensors, and even embedded hardware like GPUs and FPGAs, visible and usable within a Kubernetes cluster.</p>
                         </li>
                         <li class="tensorsite-list__item">
-                          <p><code>Expertise Tightrope:</code> Knowledge alone won't suffice. You need to walk the tightrope of hands-on expertise. Setting up a test EKS cluster on your local machine using tools like Minikube becomes your training ground. Deploying sample applications, experimenting with configurations, and battling troubleshooting gremlins are your trials, each step forging your Kubernetes warrior spirit.</p>
+                          <p><code>Simplifies device management:</code> It eliminates the need for complex configurations or custom code to utilize these devices in your applications running on Kubernetes.</p>
                         </li>
                         <li class="tensorsite-list__item">
-                          <p><code>Resource Hunt:</code> Building your EKS cluster isn't just about intellectual prowess; it's a resource hunt.  Online platforms like ACloud Guru and Katacoda become your allies, offering interactive learning environments to test your mettle. Remember, the real treasures lie in vibrant online communities and forums, where peers offer support and guidance on your quest.</p>
+                          <p><code>Dynamic device discovery:</code> Akri continuously detects new devices connected to nodes in the cluster, automatically adding them as resources.</p>
                         </li>
                         <li class="tensorsite-list__item">
-                          <p><code>Time Vortex:</code> Mastery takes time, and the BUILD model demands a hefty investment. Dedicate daily practice sessions to honing your skills. Tackle weekend projects to explore advanced features like ingress controllers and persistent storage. Attend industry events to stay updated with the ever-evolving Kubernetes landscape. This time vortex, while challenging, ultimately shapes your expertise and confidence.</p>
+                          <p><code>Workload scheduling based on devices:</code> You can leverage Akri to schedule workloads on the cluster based on the capabilities and availability of specific devices.</p>
                         </li>
                       </ul>
 
-                      <h4>EKS Complexity Tangled Web</h4>
-
-                      <p>Let's translate these K E R T elements into concrete EKS examples:</p>
+                      <h4>Benefits:</h4>
 
                       <ul class="tensorsite-list__items">
                         <li class="tensorsite-list__item">
-                          <p><code>VPC and Subnets:</code> Crafting the perfect VPC and subnet configuration for your EKS cluster is a delicate dance. Balancing security, network isolation, and performance demands deep understanding of AWS networking concepts. One misconfiguration could unravel your entire deployment, sending you back to the labyrinth of troubleshooting manuals.</p>
+                          <p><code>Easier development for edge computing:</code> Akri bridges the gap between Kubernetes and edge devices, enabling developers to focus on application logic without worrying about low-level device interactions.</p>
                         </li>
                         <li class="tensorsite-list__item">
-                          <p><code>Master Node Management:</code> While EKS manages the master nodes for you, configuring access control with IAM roles for service accounts can be a cryptic endeavor. A single misplaced permission could compromise your cluster's security, reminding you that power in the wrong hands can be devastating.</p>
+                          <p><code>Standardized approach:</code> It provides a consistent way to manage and utilize various edge devices across different environments.</p>
                         </li>
                         <li class="tensorsite-list__item">
-                          <p><code>Security Groups and Network Policies:</code> Weaving an intricate tapestry of security groups and network policies to isolate your applications requires laser focus. A single oversight could leave your pods exposed to vulnerabilities, turning your Kubernetes cluster into a hacker's playground.</p>
+                          <p><code>Scalability and flexibility:</code> Akri can handle a wide range of devices and workloads, making it suitable for diverse edge computing scenarios.</p>
                         </li>
-                      </ul>
-
-                      <h4>Remember:</h4>
-
-                      <ul class="tensorsite-list__items">
-                        <li class="tensorsite-list__item">
-                          <p><code>The reward is worth the challenge:</code>The immense customization and control of the BUILD model comes at a cost, but the journey itself is a valuable learning experience.</p>
-                        </li>
-                        <li class="tensorsite-list__item">
-                          <p><code>Seek help:</code>Don't hesitate to call upon the wisdom of the Kubernetes community. Sharing your struggles and learning from others can guide you through the darkest depths of the complexity labyrinth.</p>
-                        </li>
-                        <li class="tensorsite-list__item">
-                          <p><code>Embrace the growth mindset:</code>Building your EKS cluster is a continuous learning process. Every challenge conquered, every error resolved, strengthens your KERT foundation and makes you a more formidable Kubernetes master.</p>
-                        </li>
-                        <li class="tensorsite-list__item">
-                          <p>Building an EKS cluster from scratch is not for the faint of heart. It's a complex undertaking demanding a deep commitment to K E R T. for those who embrace the challenge, the rewards are immense - a profound understanding of Kubernetes, unparalleled control over your cluster, and the immense satisfaction of crafting your own cloud masterpiece. So, sharpen your K E R T weapons, prepare for the complexity odyssey, and embark on your EKS building journey! Remember, the Kubernetes universe awaits, and with dedication, you can conquer its intricacies and claim your rightful place as a master of container orchestration.</p>
-                        </li>
-                      </ul>
-
-                      <h3>Mission accomplished! Now, let's go ahead and simplify your Kubernetes journey. Contact k8or.</h3>
-                    <div class="cta-row" style="text-align: right;">
-                      <div class="tensorsite-content more-left-tp">
-                        <div class="tensorsite-content__cta-wrapper">
-                          <a class="home-btn" href="../k8or-cluster-example/index.html" item-id="more">
-                            example
-                          </a>
-                        </div>
-                      </div>
+                      </ul-->
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
           </div>
 
           <section #="" analytics="" anchors=""
@@ -1603,7 +1464,7 @@
                 <div style="display: inline-flex;margin: 0 auto;">
                   <div class="linn">
                     <a class="tensorsite-content__cta tensorsite-button tensorsite-content__cta-icon tensorsite-icon--redesign-arrow--small"
-                      href="https://www.k8or.com/buy-model/index.html"
+                      href="https://www.k8or.com/deployment-option/index.html"
                       item-id="Build recommendation systems with reinforcement learning" tabindex="-1">
                       <img style="position: relative; top: 2.5px;"
                         src="../design-v0-0-01-dir-k8d/arrow-prev-button-image-v0-0-01-fil.svg" width="20"
@@ -1613,7 +1474,7 @@
                   </div>
                   <div class="linn">
                     <a class="tensorsite-content__cta tensorsite-button tensorsite-content__cta-icon tensorsite-icon--redesign-arrow--small"
-                      href="https://www.k8or.com/api-gateway/index.html"
+                      href="https://www.k8or.com/deployment-option-two/index.html"
                       item-id="Build recommendation systems with reinforcement learning" tabindex="-1">
                       <div style="display: inline-block;position: relative;bottom: 2px;">Next</div>
                       <img style="position: relative; top: 2.5px;"
@@ -1753,6 +1614,57 @@
   </script>
   <devsite-a11y-announce></devsite-a11y-announce>
 </body>
+<script>
+    let animationContainer = document.querySelector('.animated-title');
+    let textData = animationContainer.getAttribute('aria-label');
+
+    function splitWords() {
+        let splitedText = textData.split(' ');
+
+        splitedText.join('& &').split('&').forEach(function (e) {
+            let span = document.createElement('span');
+            span.classList.add('animated-word');
+            span.setAttribute('data-text', e);
+            animationContainer.appendChild(span);
+        });
+        splitLetters();
+    }
+    splitWords()
+
+
+    function splitLetters() {
+        let animatedWords = document.querySelectorAll('.animated-word');
+        animatedWords.forEach(function (e, i) {
+            e.getAttribute('data-text').split('').forEach(function (f, j) {
+                f = f == ' ' ? '&#32;' : f;
+                let span = document.createElement('span');
+                span.classList.add('animated-element');
+                span.setAttribute('aria-hidden', 'true');
+                span.innerHTML = f;
+                e.appendChild(span);
+            });
+            animate(e, i);
+        })
+    }
+
+    function animate(e, i) {
+        let wordCount = e.getAttribute('data-text').length;
+        e.style.opacity = 1;
+        e.classList.add('animate');
+    }
+
+    // Replay Button - For Demo purpose only
+    function replay() {
+        let animatedWords = document.querySelectorAll('.animated-word');
+        animatedWords.forEach(function (e, i) {
+            e.classList.remove('animate');
+            e.style.opacity = 0;
+            setTimeout(() => {
+                animate(e, i);
+            }, 500);
+        })
+    }
+</script>
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script type="text/javascript">
   var slider = $('.slider-container');
@@ -1813,20 +1725,20 @@
     slides.eq(prevSlide).addClass('visible');
   }
 
-  var btn = $('#buttonsr');
+    var btn = $('#buttonsr');
 
-  $(window).scroll(function () {
-    if ($(window).scrollTop() > 400) {
-      btn.addClass('show');
-    } else {
-      btn.removeClass('show');
-    }
-  });
+    $(window).scroll(function () {
+      if ($(window).scrollTop() > 400) {
+        btn.addClass('show');
+      } else {
+        btn.removeClass('show');
+      }
+    });
 
-  btn.on('click', function (e) {
-    e.preventDefault();
-    $('html, body').animate({ scrollTop: 0 }, '300');
-  });
+    btn.on('click', function (e) {
+      e.preventDefault();
+      $('html, body').animate({ scrollTop: 0 }, '300');
+    });
 </script>
 
 </html>
