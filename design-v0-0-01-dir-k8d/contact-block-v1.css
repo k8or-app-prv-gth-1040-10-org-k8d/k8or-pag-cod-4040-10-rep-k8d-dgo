@@ -5,7 +5,8 @@
     font-family: "Google Sans", sans-serif;
     font-size: 20px;
     font-weight: 500;
-    line-height: 26px animation: textGlitch 3s ease-in-out infinite alternate;
+    line-height: 26px
+    animation: textGlitch 3s ease-in-out infinite alternate;
 }
 
 .animated-title:before {
@@ -19,7 +20,7 @@
 
 .animated-title {
     font-family: "Google Sans", sans-serif;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 700;
     line-height: 40px;
     color: #425066;
@@ -48,7 +49,7 @@
 
 .animated-title span {
     display: inline-block;
-    /* min-width: 1rem; */
+    min-width: 1rem;
 }
 
 .animated-title .animate:nth-child(3n+1) span {
@@ -40753,7 +40754,6 @@
 
 .animated-word {
     opacity: 0;
-    margin-right: 6px;
 }
 
 @keyframes displayLetter {
