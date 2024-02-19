@@ -34,6 +34,7 @@
     href="../design-v0-0-01-dir-k8d/opensearch.xml">
   <link rel="alternate" hreflang="en" href="https://www.k8or.com/" />
   <title>k8or Cluster Example</title>
+  <link rel="stylesheet" href="../design-v0-0-01-dir-k8d/contact-block.css">
   <meta property="og:title" content="k8or Cluster Example">
 
   <!-- Discover k8or -->
@@ -2316,6 +2317,61 @@
   </script>
   <devsite-a11y-announce></devsite-a11y-announce>
 </body>
+<script>
+  let animationContainer = document.querySelector('.animated-title');
+  let textData = animationContainer.getAttribute('aria-label');
+
+  function splitWords() {
+    let splitedText = textData.split(' ');
+
+    splitedText.join('& &').split('&').forEach(function (e) {
+      let span = document.createElement('span');
+      span.classList.add('animated-word');
+      span.setAttribute('data-text', e);
+      animationContainer.appendChild(span);
+    });
+    splitLetters();
+  }
+  splitWords()
+
+
+  function splitLetters() {
+    let animatedWords = document.querySelectorAll('.animated-word');
+    animatedWords.forEach(function (e, i) {
+      e.getAttribute('data-text').split('').forEach(function (f, j) {
+        f = f == ' ' ? '&#32;' : f;
+        let span = document.createElement('span');
+        span.classList.add('animated-element');
+        span.setAttribute('aria-hidden', 'true');
+        span.innerHTML = f;
+        e.appendChild(span);
+      });
+      animate(e, i);
+    })
+  }
+
+  function animate(e, i) {
+    let wordCount = e.getAttribute('data-text').length;
+    e.style.opacity = 1;
+    e.classList.add('animate');
+  }
+
+  setTimeout(() => {
+    $("p.animated-title > a").appendTo("p.animated-title");
+  }, 2000)
+
+  // Replay Button - For Demo purpose only
+  function replay() {
+    let animatedWords = document.querySelectorAll('.animated-word');
+    animatedWords.forEach(function (e, i) {
+      e.classList.remove('animate');
+      e.style.opacity = 0;
+      setTimeout(() => {
+        animate(e, i);
+      }, 500);
+    })
+  }
+</script>
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script type="text/javascript">
   var slider = $('.slider-container');
