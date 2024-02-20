@@ -32,8 +32,9 @@
   <link rel="search" type="application/opensearchdescription+xml" title="k8or"
     href="../design-v0-0-01-dir-k8d/opensearch.xml">
   <link rel="alternate" hreflang="en" href="https://www.k8or.com/" />
-  <title>API Gateway on k8or</title>
-  <meta property="og:title" content="API Gateway on k8or">
+  <title>API Gateway</title>
+  <link rel="stylesheet" href="../design-v0-0-01-dir-k8d/contact-block.css">
+  <meta property="og:title" content="API Gateway">
   <meta name="description"
     content="Deployment Platform: Runs independently on your preferred cloud platform or directly on your own hardware.">
   <meta property="og:description"
@@ -301,6 +302,41 @@
 
     .share-icons a {
       fill: #26d926;
+    }
+
+    .tensorsite-list__items {
+      list-style-type: disc;
+    }
+
+    .qts {
+      font-size: 18px;
+      position: relative;
+      top: 4px;
+      right: 4px;
+      border-bottom: 0px !important;
+    }
+
+    .qts img {
+      width: 21px;
+    }
+
+    .qts.ani {
+      display: inline-block;
+      width: 21px;
+      height: 21px;
+      top: 0px;
+    }
+
+    .qts.ani {
+      font-size: 18px;
+      position: relative;
+      top: 5px;
+      right: 4px;
+      border-bottom: 0px !important;
+    }
+
+    .qts.ani img {
+      margin: 0;
     }
 
     @media only screen and (max-width:839px) {
@@ -1411,16 +1447,16 @@
                 <div class="tensorsite-container">
                   <div class="tensorsite-detail">
                     <div class="container">
-                      <div class="tensorsite-detail__title"> API Gateway on k8or </div>
+                      <div class="tensorsite-detail__title">  Navigating the Kubernetes API Gateway Ecosystem: A Category Overview </div>
 
                       <div class="combined-info"
                         style="display: flex; flex-direction: row; justify-content: space-between;">
                         <div class="author-info" style="display: flex; align-items: center;">
-                          <img src="../design-v0-0-01-dir-k8d/user-logo-image-v0-0-01-fil.svg" alt="k8or" width="50"
+                          <img src="../design-v0-0-01-dir-k8d/anna-veretennykova-profile-image-v0-0-01-fil.jpg" alt="k8or" width="50"
                             height="50" style="margin-right: 10px;">
                           <figcaption>
-                            <span class="author-name">k8or</span>
-                            <time datetime="2024-02-07">February 4, 2024</time>
+                            <span class="author-name">Anna Veretennykova</span>
+                            <time datetime="2024-02-07">February 20, 2024</time>
                           </figcaption>
                         </div>
 
@@ -1497,9 +1533,7 @@
 
                     <div class="tensorsite-content__description">
                       <inline-html>
-                        <p>API Gateways emerge as essential tools for managing and securing your APIs. They act as a
-                          single point of entry, streamlining user access, implementing security policies, and
-                          enhancing overall API management. </p>
+                        <p>The "API Gateway" category within the Kubernetes product landscape represents a collection of tools designed to simplify and enhance the management of APIs deployed in Kubernetes environments. These gateways act as single points of entry, streamlining access to your microservices and offering a wealth of functionalities that empower developers and operators alike. </p>
                       </inline-html>
                     </div>
                   </div>
@@ -1586,6 +1620,32 @@
         </div>
       </div>
       </div>
+          <div class="tensorsite-group__divider"></div>
+          <devsite-content>
+            <div class="content-wrap" style="padding-top: 0px;">
+              <div class="section" id="blog">
+                <div class="widget Blog" data-version="1" id="Blog1">
+                  <div class="tensorsite-container">
+                    <div class="tensorsite-detail">
+                      <div class="tensorsite-detail__body">
+                        <a name="more"></a>
+                        <p class="animated-title"
+                          aria-label="Mission accomplished! Now, let's go ahead and simplify your Kubernetes journey. Contact k8or.">
+                          <a href="https://www.k8or.com/contact/index.html" class="qts ani"
+                            target="_blank"><img style="width: 21px;"
+                              src="../design-v0-0-01-dir-k8d/popout-image-v0-0-01-fil.svg" alt=""></a>
+                        </p>
+                        <div class="tensorsite-detail__image" style="margin-top: 20px;"> <img
+                            src="../design-v0-0-01-dir-k8d/main-slide-image-v0-0-01-fil.png"
+                            width="100%" height="400" alt="Description of the image">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </devsite-content>
       <!--div class="tensorsite-group__divider"></div-->
     </section>
 
@@ -1783,6 +1843,61 @@
   </script>
   <devsite-a11y-announce></devsite-a11y-announce>
 </body>
+<script>
+  let animationContainer = document.querySelector('.animated-title');
+  let textData = animationContainer.getAttribute('aria-label');
+
+  function splitWords() {
+    let splitedText = textData.split(' ');
+
+    splitedText.join('& &').split('&').forEach(function (e) {
+      let span = document.createElement('span');
+      span.classList.add('animated-word');
+      span.setAttribute('data-text', e);
+      animationContainer.appendChild(span);
+    });
+    splitLetters();
+  }
+  splitWords()
+
+
+  function splitLetters() {
+    let animatedWords = document.querySelectorAll('.animated-word');
+    animatedWords.forEach(function (e, i) {
+      e.getAttribute('data-text').split('').forEach(function (f, j) {
+        f = f == ' ' ? '&#32;' : f;
+        let span = document.createElement('span');
+        span.classList.add('animated-element');
+        span.setAttribute('aria-hidden', 'true');
+        span.innerHTML = f;
+        e.appendChild(span);
+      });
+      animate(e, i);
+    })
+  }
+
+  function animate(e, i) {
+    let wordCount = e.getAttribute('data-text').length;
+    e.style.opacity = 1;
+    e.classList.add('animate');
+  }
+
+  setTimeout(() => {
+    $("p.animated-title > a").appendTo("p.animated-title");
+  }, 2000)
+
+  // Replay Button - For Demo purpose only
+  function replay() {
+    let animatedWords = document.querySelectorAll('.animated-word');
+    animatedWords.forEach(function (e, i) {
+      e.classList.remove('animate');
+      e.style.opacity = 0;
+      setTimeout(() => {
+        animate(e, i);
+      }, 500);
+    })
+  }
+</script>
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script type="text/javascript">
   var slider = $('.slider-container');
