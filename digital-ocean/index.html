@@ -34,6 +34,7 @@
     href="../design-v0-0-01-dir-k8d/opensearch.xml">
   <link rel="alternate" hreflang="en" href="https://www.k8or.com/" />
   <title>k8or on DigitalOcean</title>
+  <link rel="stylesheet" href="../design-v0-0-01-dir-k8d/contact-block.css">
   <meta property="og:title" content="k8or on DigitalOcean">
 
   <!-- Discover k8or -->
@@ -331,6 +332,29 @@
 
     .qts img {
       width: 21px;
+    }
+
+    .qts.ani {
+      display: inline-block;
+      width: 21px;
+      height: 21px;
+      top: 0px;
+    }
+
+    .qts.ani {
+      font-size: 18px;
+      position: relative;
+      top: 5px;
+      right: 4px;
+      border-bottom: 0px !important;
+    }
+
+    .qts.ani img {
+      margin: 0;
+    }
+
+    .tensorsite-list__items {
+      list-style-type: disc;
     }
 
     @media only screen and (max-width:839px) {
@@ -1513,114 +1537,351 @@
                         </inline-html>
                       </div>
 
-                      <h4>Managed Services:</h4>
+                    <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
+                      <inline-html>
+                        <h2>Managed Services:
+                          <a href="https://www.k8or.com/cluster-native-product/index.html" class="qts"
+                            target="_blank">
+                            <img src="../design-v0-0-01-dir-k8d/popout-image-v0-0-01-fil.svg" alt="">
+                          </a>
+                        </h2>
+                      </inline-html>
+                    </div>
 
-                      <p><code>Container Orchestration:</code> DOKS itself is the managed service for running Kubernetes clusters on DigitalOcean. It handles upgrades, patching, and scaling, making it ideal for beginners and experienced users alike.</p>
+                    <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
+                      <inline-html>
+                        <h3>Scheduling and Orchestration:
+                          <a href="https://www.k8or.com/scheduling-orchestration/index.html" class="qts"
+                            target="_blank">
+                            <img src="../design-v0-0-01-dir-k8d/popout-image-v0-0-01-fil.svg" alt="">
+                          </a>
+                        </h3>
+                      </inline-html>
+                    </div>
 
-                      <p><code>Database:</code> While DigitalOcean doesn't offer a fully managed relational database service, you can easily integrate with external providers like:</p>
+                    <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
+                      <inline-html>
+                        <p>DOKS itself is the managed service for running Kubernetes clusters on DigitalOcean. It handles upgrades, patching, and scaling, making it ideal for beginners and experienced users alike.</p>
+                      </inline-html>
+                    </div>
 
+                    <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
+                      <inline-html>
+                        <h3>Database:
+                          <a href="https://www.k8or.com/database/index.html" class="qts"
+                            target="_blank">
+                            <img src="../design-v0-0-01-dir-k8d/popout-image-v0-0-01-fil.svg" alt="">
+                          </a>
+                        </h3>
+                      </inline-html>
+                    </div>
+
+                    <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
+                      <inline-html>
+                        <p>While DigitalOcean doesn't offer a fully managed relational database service, you can easily integrate with external providers like:</p>
+                      </inline-html>
+                    </div>
+                        <ul class="tensorsite-list__items">
+                          <li class="tensorsite-list__item">
+                            <p><code>Cloud SQL:</code> Google Cloud offers MySQL, PostgreSQL, and Aurora MySQL as managed options.</p>
+                          </li>
+                          <li class="tensorsite-list__item">
+                            <p><code>Amazon RDS:</code> AWS provides a variety of managed relational database engines.</p>
+                          </li>
+                          <li class="tensorsite-list__item">
+                            <p><code>Azure Database:</code> Azure offers managed MySQL, PostgreSQL, and MariaDB instances.</p>
+                          </li>
+                        </ul>
+
+                    <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
+                      <inline-html>
+                        <h3>Continuous Integration and Delivery:
+                          <a href="https://www.k8or.com/continuous-integration/index.html" class="qts"
+                            target="_blank">
+                            <img src="../design-v0-0-01-dir-k8d/popout-image-v0-0-01-fil.svg" alt="">
+                          </a>
+                        </h3>
+                      </inline-html>
+                    </div>
+
+                    <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
+                      <inline-html>
+                        <p>Utilize CircleCI or Travis CI for building, testing, and deploying your applications to the cluster. Both integrate seamlessly with DigitalOcean through APIs and offer various build configurations.</p>
+                      </inline-html>
+                    </div>
+
+                    <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
+                      <inline-html>
+                        <h3>Streaming and Messaging:
+                          <a href="https://www.k8or.com/streaming-messaging/index.html" class="qts"
+                            target="_blank">
+                            <img src="../design-v0-0-01-dir-k8d/popout-image-v0-0-01-fil.svg" alt="">
+                          </a>
+                        </h3>
+                      </inline-html>
+                    </div>
+
+                    <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
+                      <inline-html>
+                        <p>Leverage Apache Kafka deployed on a separate Droplet or Managed Kubernetes cluster. While not a directly managed service, DigitalOcean provides documentation and tutorials for setting up Kafka on their platform.</p>
+                      </inline-html>
+                    </div>
+
+                    <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
+                      <inline-html>
+                        <h3>Service Mesh:
+                          <a href="https://www.k8or.com/service-mesh/index.html" class="qts"
+                            target="_blank">
+                            <img src="../design-v0-0-01-dir-k8d/popout-image-v0-0-01-fil.svg" alt="">
+                          </a>
+                        </h3>
+                      </inline-html>
+                    </div>
+
+                    <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
+                      <inline-html>
+                        <p>Currently, DigitalOcean doesn't offer a managed service mesh option. You can explore open-source options like Istio or Linkerd and deploy them alongside your applications within the DOKS cluster.</p>
+                      </inline-html>
+                    </div>
+
+                    <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
+                      <inline-html>
+                        <h3>API Gateway:
+                          <a href="https://www.k8or.com/api-gateway/index.html" class="qts"
+                            target="_blank">
+                            <img src="../design-v0-0-01-dir-k8d/popout-image-v0-0-01-fil.svg" alt="">
+                          </a>
+                        </h3>
+                      </inline-html>
+                    </div>
+
+                    <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
+                      <inline-html>
+                        <p>Utilize Kong or NGINX Ingress Controller for managing and securing external access to your applications. Both can be deployed on a separate Droplet or within your DOKS cluster and offer flexible API gateway functionalities.</p>
+                      </inline-html>
+                    </div>
+
+                    <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
+                      <inline-html>
+                        <h3>Monitoring:
+                          <a href="https://www.k8or.com/monitoring/index.html" class="qts"
+                            target="_blank">
+                            <img src="../design-v0-0-01-dir-k8d/popout-image-v0-0-01-fil.svg" alt="">
+                          </a>
+                        </h3>
+                      </inline-html>
+                    </div>
+
+                    <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
+                      <inline-html>
+                        <p>For comprehensive monitoring of your cluster and applications, integrate Prometheus and Grafana. Deploy them on separate Droplets or within the DOKS cluster and leverage their capabilities for metric collection, analysis, and visualization.</p>
+                      </inline-html>
+                    </div>
+
+                    <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
+                      <inline-html>
+                        <h3>Logging:
+                          <a href="https://www.k8or.com/logging/index.html" class="qts"
+                            target="_blank">
+                            <img src="../design-v0-0-01-dir-k8d/popout-image-v0-0-01-fil.svg" alt="">
+                          </a>
+                        </h3>
+                      </inline-html>
+                    </div>
+
+                    <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
+                      <inline-html>
+                        <p>Employ Fluentd for centralized log management. Deploy it on a separate Droplet or within the DOKS cluster and configure it to aggregate and forward logs to a centralized solution like ELK Stack.</p>
+                      </inline-html>
+                    </div>
+
+                    <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
+                      <inline-html>
+                        <h3>Storage:
+                          <a href="https://www.k8or.com/cloud-native-storage/index.html" class="qts"
+                            target="_blank">
+                            <img src="../design-v0-0-01-dir-k8d/popout-image-v0-0-01-fil.svg" alt="">
+                          </a>
+                        </h3>
+                      </inline-html>
+                    </div>
+
+                    <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
+                      <inline-html>
+                        <p>Depending on your needs, consider:</p>
+                      </inline-html>
+                    </div>
+                        <ul class="tensorsite-list__items">
+                          <li class="tensorsite-list__item">
+                            <p><code>DigitalOcean Block Storage:</code> Block storage for persistent volumes attached to applications.</p>
+                          </li>
+                          <li class="tensorsite-list__item">
+                            <p><code>DigitalOcean Spaces:</code> Object storage for unstructured data like backups and media.</p>
+                          </li>
+                          <li class="tensorsite-list__item">
+                            <p><code>DigitalOcean Managed Databases:</code> While not directly for containers, these managed databases offer persistent storage options you can access from your DOKS cluster applications.</p>
+                          </li>
+                        </ul>
+
+                    <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
+                      <inline-html>
+                        <h3>Container Registry:
+                          <a href="https://www.k8or.com/container-registry/index.html" class="qts"
+                            target="_blank">
+                            <img src="../design-v0-0-01-dir-k8d/popout-image-v0-0-01-fil.svg" alt="">
+                          </a>
+                        </h3>
+                      </inline-html>
+                    </div>
+
+                    <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
+                      <inline-html>
+                        <p>Store and manage container images securely with Docker Hub or a Private Docker Registry hosted on a separate Droplet or within your DOKS cluster.</p>
+                      </inline-html>
+                    </div>
+
+                    <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
+                      <inline-html>
+                        <h2>Deployment Steps:
+                          <a href="https://www.k8or.com/deployment-option/index.html" class="qts"
+                            target="_blank">
+                            <img src="../design-v0-0-01-dir-k8d/popout-image-v0-0-01-fil.svg" alt="">
+                          </a>
+                        </h2>
+                      </inline-html>
+                    </div>
+
+                    <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
+                      <inline-html>
+                        <ul class="tensorsite-list__items">
+                          <li class="tensorsite-list__item">
+                            <p>Create a DigitalOcean Account: Sign up for a free tier account.</p>
+                          </li>
+                          <li class="tensorsite-list__item">
+                            <p>Launch a DOKS Cluster and set up a basic cluster using the DigitalOcean control panel or CLI.
+                              <a href="https://www.k8or.com/deployment-option-four/index.html" class="qts ani"
+                                target="_blank">
+                                <img src="../design-v0-0-01-dir-k8d/popout-image-v0-0-01-fil.svg" alt="">
+                              </a>
+                            </p>
+                          </li>
+                          <li class="tensorsite-list__item">
+                            <p>Configure Managed Services:</p>
+                            <ul class="tensorsite-list__items">
+                              <li class="tensorsite-list__item">
+                                <p><code>Database:</code> Set up and configure chosen managed database service with appropriate access from your DOKS cluster.
+                                <a href="https://www.k8or.com/database/index.html" class="qts ani"
+                                  target="_blank">
+                                  <img src="../design-v0-0-01-dir-k8d/popout-image-v0-0-01-fil.svg" alt="">
+                                </a>
+                              </p>
+                              </li>
+                              <li class="tensorsite-list__item">
+                                <p><code>Continuous Integration and Delivery:</code> Create and configure your chosen CI/CD platform with integration to DOKS and your code repository.
+                                <a href="https://www.k8or.com/continuous-integration/index.html" class="qts ani"
+                                  target="_blank">
+                                  <img src="../design-v0-0-01-dir-k8d/popout-image-v0-0-01-fil.svg" alt="">
+                                </a>
+                              </p>
+                              </li>
+                              <li class="tensorsite-list__item">
+                                <p><code>Streaming and Messaging:</code> Deploy and configure Apache Kafka on a separate Droplet or Managed Kubernetes cluster and integrate it with your applications.
+                                <a href="https://www.k8or.com/streaming-messaging/index.html" class="qts ani"
+                                  target="_blank">
+                                  <img src="../design-v0-0-01-dir-k8d/popout-image-v0-0-01-fil.svg" alt="">
+                                </a>
+                              </p>
+                              </li>
+                              <li class="tensorsite-list__item">
+                                <p><code>Service Mesh:</code> Deploy and configure your chosen open-source service mesh option within your DOKS cluster.
+                                <a href="https://www.k8or.com/service-mesh/index.html" class="qts ani"
+                                  target="_blank">
+                                  <img src="../design-v0-0-01-dir-k8d/popout-image-v0-0-01-fil.svg" alt="">
+                                </a>
+                              </p>
+                              </li>
+                              <li class="tensorsite-list__item">
+                                <p><code>API Gateway:</code> Deploy and configure Kong or NGINX Ingress Controller on a Droplet or within the cluster and connect it to your applications.
+                                <a href="https://www.k8or.com/api-gateway/index.html" class="qts ani"
+                                  target="_blank">
+                                  <img src="../design-v0-0-01-dir-k8d/popout-image-v0-0-01-fil.svg" alt="">
+                                </a>
+                              </p>
+                              </li>
+                              <li class="tensorsite-list__item">
+                                <p><code>Monitoring:</code>  Deploy and configure Prometheus, Grafana, and Fluentd on separate Droplets or within the cluster for comprehensive monitoring and logging capabilities.
+                                <a href="https://www.k8or.com/monitoring/index.html" class="qts ani"
+                                  target="_blank">
+                                  <img src="../design-v0-0-01-dir-k8d/popout-image-v0-0-01-fil.svg" alt="">
+                                </a>
+                              </p>
+                              </li>
+                              <li class="tensorsite-list__item">
+                                <p><code>Logging:</code>  Deploy and configure Prometheus, Grafana, and Fluentd on separate Droplets or within the cluster for comprehensive monitoring and logging capabilities.
+                                <a href="https://www.k8or.com/logging/index.html" class="qts ani"
+                                  target="_blank">
+                                  <img src="../design-v0-0-01-dir-k8d/popout-image-v0-0-01-fil.svg" alt="">
+                                </a>
+                              </p>
+                              </li>
+                              <li class="tensorsite-list__item">
+                                <p><code>Storage:</code> Create and configure chosen storage options based on your application needs.
+                                <a href="https://www.k8or.com/cloud-native-storage/index.html" class="qts ani"
+                                  target="_blank">
+                                  <img src="../design-v0-0-01-dir-k8d/popout-image-v0-0-01-fil.svg" alt="">
+                                </a>
+                              </p>
+                              </li>
+                              <li class="tensorsite-list__item">
+                                <p><code>Container Registry:</code> Set up your chosen container registry solution and ensure secure access from your DOKS cluster.
+                                <a href="https://www.k8or.com/container-registry/index.html" class="qts ani"
+                                  target="_blank">
+                                  <img src="../design-v0-0-01-dir-k8d/popout-image-v0-0-01-fil.svg" alt="">
+                                </a>
+                              </p>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="tensorsite-list__item">
+                            <p>Deploy Applications: Use kubectl or Helm to deploy your applications to the DOKS cluster, leveraging container images from your chosen registry.
+                                <a href="https://www.k8or.com/helm/index.html" class="qts ani"
+                                  target="_blank">
+                                  <img src="../design-v0-0-01-dir-k8d/popout-image-v0-0-01-fil.svg" alt="">
+                                </a>
+                              </p>
+                          </li>
+                        </ul>
+                      </inline-html>
+                    </div>
+
+                    <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
+                      <inline-html>
+                        <h2>Additional Resources:</h2>
+                      </inline-html>
+                    </div>
                       <ul class="tensorsite-list__items">
                         <li class="tensorsite-list__item">
-                          <p><code>Cloud SQL:</code> Google Cloud offers MySQL, PostgreSQL, and Aurora MySQL as managed options.</p>
+                          <p><code>DigitalOcean Documentation:</code> The official documentation for DOKS and other services offers detailed instructions and best practices.</p>
                         </li>
                         <li class="tensorsite-list__item">
-                          <p><code>Amazon RDS:</code> AWS provides a variety of managed relational database engines.</p>
+                          <p><code>DigitalOcean Tutorials:</code> Find guides and walkthroughs for setting up various services and tools on DigitalOcean.</p>
                         </li>
                         <li class="tensorsite-list__item">
-                          <p><code>Azure Database:</code> Azure offers managed MySQL, PostgreSQL, and MariaDB instances.</p>
+                          <p><code>Community Forums:</code> Engage with the DigitalOcean community for assistance and knowledge sharing.</p>
                         </li>
                       </ul>
 
-                      <p><code>Continuous Integration/Delivery:</code> Employ Azure DevOps Pipelines for building, testing, and deploying your applications to the cluster. It integrates seamlessly with other Azure services and supports diverse build configurations.</p>
-
-                      <p><code>Messaging/Streaming:</code> Utilize Azure Event Hubs for a managed publish-subscribe messaging system. It offers high scalability, reliability, and integration with other Azure services.</p>
-
-                      <p><code>Service Mesh:</code> Simplify service-to-service communication with Azure Service Mesh. It provides traffic management, observability, and security features for your AKS applications.</p>
-
-                      <p><code>API Gateway:</code> Use Azure API Management for managing and securing external access to your applications. It simplifies API development, offers scalability, and provides policy enforcement and analytics.</p>
-
-                      <p><code>Monitoring:</code> For comprehensive monitoring of your cluster and applications, utilize Azure Monitor. It collects metrics, logs, and events for analysis and troubleshooting.</p>
-
-                      <p><code>Logging:</code> Employ Azure Log Analytics for centralized log management. It aggregates logs from various sources and allows filtering, analysis, and visualization.</p>
-
-                      <p><code>API Gateway:</code> Use Azure API Management for managing and securing external access to your applications. It simplifies API development, offers scalability, and provides policy enforcement and analytics.</p>
-
-                      <p><code>Storage:</code> Depending on your needs, consider:</p>
-
+                    <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
+                      <inline-html>
+                        <h2>Remember:</h2>
+                      </inline-html>
+                    </div>
                       <ul class="tensorsite-list__items">
                         <li class="tensorsite-list__item">
-                          <p><code>Azure Blob Storage:</code> Object storage for unstructured data like backups and media.</p>
-                        </li>
-                        <li class="tensorsite-list__item">
-                          <p><code>Azure Managed Disks:</code> Block storage for persistent volumes attached to applications.</p>
-                        </li>
-                        <li class="tensorsite-list__item">
-                          <p><code>Azure Files:</code> Managed file shares for containerized applications.</p>
+                          <p>This is a high-level overview. Each service has its own configuration options and considerations.</p>
                         </li>
                       </ul>
 
-                      <p><code>Container Registry:</code> Store and manage container images securely with Azure Container Registry (ACR). It integrates seamlessly with AKS deployments.</p>
-
-                      <h4>Deployment Steps:</h4>
-
-                      <p>Create an Azure Account: Sign up for a free tier account on Azure.</p>
-
-                      <p>Launch an AKS Cluster and set up a basic cluster using the Azure portal or Azure CLI.</p>
-
-                      <p>Configure Managed Services:</p>
-
-                      <ul class="tensorsite-list__items">
-                        <li class="tensorsite-list__item">
-                          <p><code>Databases:</code> Create Azure Database instances or provision Cosmos DB/Table Storage resources following their respective documentation.</p>
-                        </li>
-                        <li class="tensorsite-list__item">
-                          <p><code>CI/CD:</code> Set up an Azure DevOps Pipeline with necessary steps for code building, testing, and deployment to AKS.</p>
-                        </li>
-                        <li class="tensorsite-list__item">
-                          <p><code>Messaging/Streaming:</code> Create an Event Hubs namespace and configure event producers and consumers as needed.</p>
-                        </li>
-                        <li class="tensorsite-list__item">
-                          <p><code>Service Mesh:</code> Enable Azure Service Mesh on your AKS cluster and configure service meshes for your applications.</p>
-                        </li>
-                        <li class="tensorsite-list__item">
-                          <p><code>API Gateway:</code> Create and configure API Management policies and gateways for your public or private APIs.</p>
-                        </li>
-                        <li class="tensorsite-list__item">
-                          <p><code>Monitoring/Logging:</code> Install the Azure Monitor agent on your cluster nodes and configure dashboards for metrics, logs, and events.</p>
-                        </li>
-                        <li class="tensorsite-list__item">
-                          <p><code>Storage:</code> Create appropriate storage resources based on your application needs.</p>
-                        </li>
-                        <li class="tensorsite-list__item">
-                          <p><code>Container Registry:</code> Set up an ACR repository to store and manage your container images.</p>
-                        </li>
-                      </ul>
-
-                      <p>Deploy Applications:</code> Use kubectl or tools like Helm to deploy your applications to the AKS cluster, leveraging container images from ACR.</p>
-
-                      <h4>Additional Resources:</h4>
-
-                      <p><code>Azure Documentation:</code> The official documentation for each service offers detailed instructions and best practices.</p>
-
-                      <p><code>Azure Quickstart Guides:</code> Various Azure services provide Getting Started guides that simplify initial setup.</p>
-
-                      <p><code>Azure Labs:</code> Participate in free online labs to gain practical experience with various services.</p>
-
-                      <h4>Remember:</h4>
-
-                      <p>This is a high-level overview. Each service has its own configuration options and considerations.</p>
-
-                      <p>Start small and gradually add complexity as you become more comfortable with Azure and Kubernetes.</p>
-
-                      <p>Consider security best practices throughout the deployment process.</p>
-
-                      <p>Leverage Azure documentation and support resources for further assistance.</p>
-
-                      <p>By following these steps and utilizing the recommended managed services, you can build a robust and scalable Kubernetes cluster on Azure, even with limited prior experience.</p>
-
-                      <p>Important Note: While similar in core functionality, there are some key differences between various cloud provider offerings in terms of naming conventions and specific features. Be sure to carefully review the individual service documentation within the Azure ecosystem to ensure you understand their capabilities and limitations.</p>
-
-                      <h3>Mission accomplished! Now, let's go ahead and simplify your Kubernetes journey. Contact k8or.</h3>
                     <div class="cta-row" style="text-align: right;">
                       <div class="tensorsite-content more-left-tp">
                         <div class="tensorsite-content__cta-wrapper">
@@ -1636,6 +1897,28 @@
             </div>
           </div>
           </div>
+          <div class="tensorsite-group__divider"></div>
+          <devsite-content>
+            <div class="content-wrap" style="padding-top: 0px;">
+              <div class="section" id="blog">
+                <div class="widget Blog" data-version="1" id="Blog1">
+                  <div class="tensorsite-container">
+                    <div class="tensorsite-detail">
+                      <div class="tensorsite-detail__body">
+                        <a name="more"></a>
+                        <p class="animated-title"
+                          aria-label="Mission accomplished! Now, let's go ahead and simplify your Kubernetes journey. Contact k8or.">
+                          <a href="https://www.k8or.com/contact/index.html" class="qts ani"
+                            target="_blank"><img style="width: 21px;"
+                              src="../design-v0-0-01-dir-k8d/popout-image-v0-0-01-fil.svg" alt=""></a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </devsite-content>
 
           <section #="" analytics="" anchors=""
             class="tensorsite-group tensorsite-group--single-card tensorsite-group--has-top-divider"
@@ -1830,6 +2113,61 @@
   </script>
   <devsite-a11y-announce></devsite-a11y-announce>
 </body>
+<script>
+  let animationContainer = document.querySelector('.animated-title');
+  let textData = animationContainer.getAttribute('aria-label');
+
+  function splitWords() {
+    let splitedText = textData.split(' ');
+
+    splitedText.join('& &').split('&').forEach(function (e) {
+      let span = document.createElement('span');
+      span.classList.add('animated-word');
+      span.setAttribute('data-text', e);
+      animationContainer.appendChild(span);
+    });
+    splitLetters();
+  }
+  splitWords()
+
+
+  function splitLetters() {
+    let animatedWords = document.querySelectorAll('.animated-word');
+    animatedWords.forEach(function (e, i) {
+      e.getAttribute('data-text').split('').forEach(function (f, j) {
+        f = f == ' ' ? '&#32;' : f;
+        let span = document.createElement('span');
+        span.classList.add('animated-element');
+        span.setAttribute('aria-hidden', 'true');
+        span.innerHTML = f;
+        e.appendChild(span);
+      });
+      animate(e, i);
+    })
+  }
+
+  function animate(e, i) {
+    let wordCount = e.getAttribute('data-text').length;
+    e.style.opacity = 1;
+    e.classList.add('animate');
+  }
+
+  setTimeout(() => {
+    $("p.animated-title > a").appendTo("p.animated-title");
+  }, 2000)
+
+  // Replay Button - For Demo purpose only
+  function replay() {
+    let animatedWords = document.querySelectorAll('.animated-word');
+    animatedWords.forEach(function (e, i) {
+      e.classList.remove('animate');
+      e.style.opacity = 0;
+      setTimeout(() => {
+        animate(e, i);
+      }, 500);
+    })
+  }
+</script>
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script type="text/javascript">
   var slider = $('.slider-container');

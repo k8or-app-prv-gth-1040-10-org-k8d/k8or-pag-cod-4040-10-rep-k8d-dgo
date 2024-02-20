@@ -73,5 +73,3 @@ Tailoring the kubernetes cluster with Pre-Selected Products on Digital Ocean DOK
 	Remember:
 
 		This is a high-level overview. Each service has its own configuration options and considerations.
-
-		Start small and gradually add complexity as you become more comfortable with Digital
