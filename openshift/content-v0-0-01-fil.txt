@@ -1,4 +1,4 @@
-Tailoring the kubernetes cluster with Pre-Selected Products on OpenShift: An In-Depth Look
+Tailoring the Kubernetes cluster with Pre-Selected Products on OpenShift: An In-Depth Look
 
 	Here's a detailed map and guide to building a k8or cluster using OpenShift and various cloud providers:
 

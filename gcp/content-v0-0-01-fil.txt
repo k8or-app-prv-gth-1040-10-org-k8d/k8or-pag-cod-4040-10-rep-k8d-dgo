@@ -1,4 +1,4 @@
-Tailoring the kubernetes cluster with Pre-Selected Products on Google Cloud: An In-Depth Look
+Tailoring the Kubernetes cluster with Pre-Selected Products on Google Cloud: An In-Depth Look
 
 	Here's a detailed map and guide to building a k8or cluster using managed services on GCP:
 

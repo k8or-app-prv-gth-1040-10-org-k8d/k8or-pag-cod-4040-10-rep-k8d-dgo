@@ -34,6 +34,7 @@
     href="../design-v0-0-01-dir-k8d/opensearch.xml">
   <link rel="alternate" hreflang="en" href="https://www.k8or.com/" />
   <title>k8or on GCP</title>
+  <link rel="stylesheet" href="../design-v0-0-01-dir-k8d/contact-block.css">
   <meta property="og:title" content="k8or on GCP">
 
   <!-- Discover k8or -->
@@ -331,6 +332,29 @@
 
     .qts img {
       width: 21px;
+    }
+
+    .qts.ani {
+      display: inline-block;
+      width: 21px;
+      height: 21px;
+      top: 0px;
+    }
+
+    .qts.ani {
+      font-size: 18px;
+      position: relative;
+      top: 5px;
+      right: 4px;
+      border-bottom: 0px !important;
+    }
+
+    .qts.ani img {
+      margin: 0;
+    }
+
+    .tensorsite-list__items {
+      list-style-type: disc;
     }
 
     @media only screen and (max-width:839px) {
@@ -1426,7 +1450,7 @@
                 <div class="tensorsite-container">
                   <div class="tensorsite-detail">
                     <div class="container">
-                      <div class="tensorsite-detail__title"> Tailoring the kubernetes cluster with Pre-Selected Products on Google Cloud: An In-Depth Look </div>
+                      <div class="tensorsite-detail__title"> Tailoring the Kubernetes cluster with Pre-Selected Products on Google Cloud: An In-Depth Look </div>
 
                       <div class="combined-info"
                         style="display: flex; flex-direction: row; justify-content: space-between;">
@@ -1513,100 +1537,355 @@
                         </inline-html>
                       </div>
 
-                      <p>Managed Services:</p> 
+                    <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
+                      <inline-html>
+                        <h2>Managed Services:
+                          <a href="https://www.k8or.com/cluster-native-product/index.html" class="qts"
+                            target="_blank">
+                            <img src="../design-v0-0-01-dir-k8d/popout-image-v0-0-01-fil.svg" alt="">
+                          </a>
+                        </h2>
+                      </inline-html>
+                    </div>
 
-                      <p><code>Container Orchestration:</code> Instead of managing your own Kubernetes control plane, utilize Google Kubernetes Engine (GKE). This fully managed service handles upgrades, patching, and scaling, making it ideal for beginners and experienced users alike.</p>
+                    <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
+                      <inline-html>
+                        <h3>Scheduling and Orchestration:
+                          <a href="https://www.k8or.com/scheduling-orchestration/index.html" class="qts"
+                            target="_blank">
+                            <img src="../design-v0-0-01-dir-k8d/popout-image-v0-0-01-fil.svg" alt="">
+                          </a>
+                        </h3>
+                      </inline-html>
+                    </div>
 
-                      <p><code>Database:</code> For a managed relational database, choose Cloud SQL. It supports various engines like MySQL, PostgreSQL, and Aurora MySQL. For NoSQL, consider Cloud Spanner or Cloud Firestore.</p>
+                    <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
+                      <inline-html>
+                        <p>Instead of managing your own Kubernetes control plane, utilize Google Kubernetes Engine (GKE). This fully managed service handles upgrades, patching, and scaling, making it ideal for beginners and experienced users alike.</p>
+                      </inline-html>
+                    </div>
 
-                      <p><code>Continuous Integration/Delivery:</code> Leverage Cloud Build for building, testing, and deploying your applications to the cluster. It integrates seamlessly with other GCP services and supports diverse build configurations.</p>
+                    <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
+                      <inline-html>
+                        <h3>Database:
+                          <a href="https://www.k8or.com/database/index.html" class="qts"
+                            target="_blank">
+                            <img src="../design-v0-0-01-dir-k8d/popout-image-v0-0-01-fil.svg" alt="">
+                          </a>
+                        </h3>
+                      </inline-html>
+                    </div>
 
-                      <p><code>Messaging/Streaming:</code> Opt for Cloud Pub/Sub for a fully managed publish-subscribe messaging system. It offers high scalability, reliability, and integration with other GCP services.</p>
+                    <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
+                      <inline-html>
+                        <p>For a managed relational database, choose Cloud SQL. It supports various engines like MySQL, PostgreSQL, and Aurora MySQL. For NoSQL, consider Cloud Spanner or Cloud Firestore.</p>
+                      </inline-html>
+                    </div>
 
-                      <p><code>Service Mesh:</code> Simplify service-to-service communication with Istio. GKE supports deploying Istio on your cluster for traffic management, observability, and security features.</p>
+                    <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
+                      <inline-html>
+                        <h3>Continuous Integration and Delivery:
+                          <a href="https://www.k8or.com/continuous-integration/index.html" class="qts"
+                            target="_blank">
+                            <img src="../design-v0-0-01-dir-k8d/popout-image-v0-0-01-fil.svg" alt="">
+                          </a>
+                        </h3>
+                      </inline-html>
+                    </div>
 
-                      <p><code>API Gateway:</code> Use Apigee for managing and securing external access to your applications. It simplifies API development, provides scalability, and offers advanced management features.</p>
+                    <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
+                      <inline-html>
+                        <p>Leverage Cloud Build for building, testing, and deploying your applications to the cluster. It integrates seamlessly with other GCP services and supports diverse build configurations.</p>
+                      </inline-html>
+                    </div>
 
-                      <p><code>Monitoring:</code> Employ Cloud Monitoring for comprehensive monitoring of your cluster and applications. It collects metrics, logs, and events for analysis and troubleshooting.</p>
+                    <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
+                      <inline-html>
+                        <h3>Streaming and Messaging:
+                          <a href="https://www.k8or.com/streaming-messaging/index.html" class="qts"
+                            target="_blank">
+                            <img src="../design-v0-0-01-dir-k8d/popout-image-v0-0-01-fil.svg" alt="">
+                          </a>
+                        </h3>
+                      </inline-html>
+                    </div>
 
-                      <p><code>Logging:</code> For centralized log management, use Cloud Logging. It aggregates logs from various sources and allows filtering and analysis.</p>
+                    <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
+                      <inline-html>
+                        <p>Opt for Cloud Pub/Sub for a fully managed publish-subscribe messaging system. It offers high scalability, reliability, and integration with other GCP services.</p>
+                      </inline-html>
+                    </div>
 
-                      <p><code>Storage:</code> Depending on your needs, consider:</p>
+                    <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
+                      <inline-html>
+                        <h3>Service Mesh:
+                          <a href="https://www.k8or.com/service-mesh/index.html" class="qts"
+                            target="_blank">
+                            <img src="../design-v0-0-01-dir-k8d/popout-image-v0-0-01-fil.svg" alt="">
+                          </a>
+                        </h3>
+                      </inline-html>
+                    </div>
 
+                    <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
+                      <inline-html>
+                        <p>Simplify service-to-service communication with Istio. GKE supports deploying Istio on your cluster for traffic management, observability, and security features.</p>
+                      </inline-html>
+                    </div>
+
+                    <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
+                      <inline-html>
+                        <h3>API Gateway:
+                          <a href="https://www.k8or.com/api-gateway/index.html" class="qts"
+                            target="_blank">
+                            <img src="../design-v0-0-01-dir-k8d/popout-image-v0-0-01-fil.svg" alt="">
+                          </a>
+                        </h3>
+                      </inline-html>
+                    </div>
+
+                    <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
+                      <inline-html>
+                        <p>Use Apigee for managing and securing external access to your applications. It simplifies API development, provides scalability, and offers advanced management features.</p>
+                      </inline-html>
+                    </div>
+
+                    <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
+                      <inline-html>
+                        <h3>Monitoring:
+                          <a href="https://www.k8or.com/monitoring/index.html" class="qts"
+                            target="_blank">
+                            <img src="../design-v0-0-01-dir-k8d/popout-image-v0-0-01-fil.svg" alt="">
+                          </a>
+                        </h3>
+                      </inline-html>
+                    </div>
+
+                    <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
+                      <inline-html>
+                        <p>Employ Cloud Monitoring for comprehensive monitoring of your cluster and applications. It collects metrics, logs, and events for analysis and troubleshooting.</p>
+                      </inline-html>
+                    </div>
+
+                    <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
+                      <inline-html>
+                        <h3>Logging:
+                          <a href="https://www.k8or.com/logging/index.html" class="qts"
+                            target="_blank">
+                            <img src="../design-v0-0-01-dir-k8d/popout-image-v0-0-01-fil.svg" alt="">
+                          </a>
+                        </h3>
+                      </inline-html>
+                    </div>
+
+                    <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
+                      <inline-html>
+                        <p>For centralized log management, use Cloud Logging. It aggregates logs from various sources and allows filtering and analysis.</p>
+                      </inline-html>
+                    </div>
+
+                    <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
+                      <inline-html>
+                        <h3>Storage:
+                          <a href="https://www.k8or.com/cloud-native-storage/index.html" class="qts"
+                            target="_blank">
+                            <img src="../design-v0-0-01-dir-k8d/popout-image-v0-0-01-fil.svg" alt="">
+                          </a>
+                        </h3>
+                      </inline-html>
+                    </div>
+
+                    <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
+                      <inline-html>
+                        <p>Depending on your needs, consider:</p>
+                      </inline-html>
+                    </div>
+                        <ul class="tensorsite-list__items">
+                          <li class="tensorsite-list__item">
+                            <p><code>Cloud Storage:</code> Object storage for unstructured data like backups and media.</p>
+                          </li>
+                          <li class="tensorsite-list__item">
+                            <p><code>Persistent Disk:</code> Block storage for persistent volumes attached to applications.</p>
+                          </li>
+                          <li class="tensorsite-list__item">
+                            <p><code>Cloud Filestore:</code> Shared file system for containerized applications.</p>
+                          </li>
+                        </ul>
+
+                    <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
+                      <inline-html>
+                        <h3>Container Registry:
+                          <a href="https://www.k8or.com/container-registry/index.html" class="qts"
+                            target="_blank">
+                            <img src="../design-v0-0-01-dir-k8d/popout-image-v0-0-01-fil.svg" alt="">
+                          </a>
+                        </h3>
+                      </inline-html>
+                    </div>
+
+                    <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
+                      <inline-html>
+                        <p>Store and manage container images securely with Google Container Registry (GCR). It integrates seamlessly with GKE deployments.</p>
+                      </inline-html>
+                    </div>
+
+                    <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
+                      <inline-html>
+                        <h2>Deployment Steps:
+                          <a href="https://www.k8or.com/deployment-option/index.html" class="qts"
+                            target="_blank">
+                            <img src="../design-v0-0-01-dir-k8d/popout-image-v0-0-01-fil.svg" alt="">
+                          </a>
+                        </h2>
+                      </inline-html>
+                    </div>
+
+                    <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
+                      <inline-html>
+                        <ul class="tensorsite-list__items">
+                          <li class="tensorsite-list__item">
+                            <p>Create a GCP Account: Sign up for a free tier account on GCP.</p>
+                          </li>
+                          <li class="tensorsite-list__item">
+                            <p>Launch a GKE Cluster and set up a basic cluster using the Cloud Console or gcloud CLI.
+                              <a href="https://www.k8or.com/deployment-option-four/index.html" class="qts ani"
+                                target="_blank">
+                                <img src="../design-v0-0-01-dir-k8d/popout-image-v0-0-01-fil.svg" alt="">
+                              </a>
+                            </p>
+                          </li>
+                          <li class="tensorsite-list__item">
+                            <p>Configure Managed Services:</p>
+                            <ul class="tensorsite-list__items">
+                              <li class="tensorsite-list__item">
+                                <p><code>Database:</code> Create Cloud SQL or Spanner instances following their respective documentation.
+                                <a href="https://www.k8or.com/database/index.html" class="qts ani"
+                                  target="_blank">
+                                  <img src="../design-v0-0-01-dir-k8d/popout-image-v0-0-01-fil.svg" alt="">
+                                </a>
+                              </p>
+                              </li>
+                              <li class="tensorsite-list__item">
+                                <p><code>Continuous Integration and Delivery:</code> Set up a Cloud Build pipeline with necessary steps for code building, testing, and deployment to GKE.
+                                <a href="https://www.k8or.com/continuous-integration/index.html" class="qts ani"
+                                  target="_blank">
+                                  <img src="../design-v0-0-01-dir-k8d/popout-image-v0-0-01-fil.svg" alt="">
+                                </a>
+                              </p>
+                              </li>
+                              <li class="tensorsite-list__item">
+                                <p><code>Streaming and Messaging:</code> Create a Cloud Pub/Sub topic and configure subscriptions as needed.
+                                <a href="https://www.k8or.com/streaming-messaging/index.html" class="qts ani"
+                                  target="_blank">
+                                  <img src="../design-v0-0-01-dir-k8d/popout-image-v0-0-01-fil.svg" alt="">
+                                </a>
+                              </p>
+                              </li>
+                              <li class="tensorsite-list__item">
+                                <p><code>Service Mesh:</code> Enable Istio on your GKE cluster and configure service meshes for your applications.
+                                <a href="https://www.k8or.com/service-mesh/index.html" class="qts ani"
+                                  target="_blank">
+                                  <img src="../design-v0-0-01-dir-k8d/popout-image-v0-0-01-fil.svg" alt="">
+                                </a>
+                              </p>
+                              </li>
+                              <li class="tensorsite-list__item">
+                                <p><code>API Gateway:</code> Create and configure Apigee API proxies for exposing your applications publicly or privately.
+                                <a href="https://www.k8or.com/api-gateway/index.html" class="qts ani"
+                                  target="_blank">
+                                  <img src="../design-v0-0-01-dir-k8d/popout-image-v0-0-01-fil.svg" alt="">
+                                </a>
+                              </p>
+                              </li>
+                              <li class="tensorsite-list__item">
+                                <p><code>Monitoring:</code>  Install the Stackdriver Agent on your cluster nodes and configure Cloud Monitoring/Logging dashboards.
+                                <a href="https://www.k8or.com/monitoring/index.html" class="qts ani"
+                                  target="_blank">
+                                  <img src="../design-v0-0-01-dir-k8d/popout-image-v0-0-01-fil.svg" alt="">
+                                </a>
+                              </p>
+                              </li>
+                              <li class="tensorsite-list__item">
+                                <p><code>Logging:</code>  Install the Stackdriver Agent on your cluster nodes and configure Cloud Monitoring/Logging dashboards.
+                                <a href="https://www.k8or.com/logging/index.html" class="qts ani"
+                                  target="_blank">
+                                  <img src="../design-v0-0-01-dir-k8d/popout-image-v0-0-01-fil.svg" alt="">
+                                </a>
+                              </p>
+                              </li>
+                              <li class="tensorsite-list__item">
+                                <p><code>Storage:</code> Create appropriate storage volumes or file systems based on your application needs.
+                                <a href="https://www.k8or.com/cloud-native-storage/index.html" class="qts ani"
+                                  target="_blank">
+                                  <img src="../design-v0-0-01-dir-k8d/popout-image-v0-0-01-fil.svg" alt="">
+                                </a>
+                              </p>
+                              </li>
+                              <li class="tensorsite-list__item">
+                                <p><code>Container Registry:</code> Set up a GCR repository to store and manage your container images.
+                                <a href="https://www.k8or.com/container-registry/index.html" class="qts ani"
+                                  target="_blank">
+                                  <img src="../design-v0-0-01-dir-k8d/popout-image-v0-0-01-fil.svg" alt="">
+                                </a>
+                              </p>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="tensorsite-list__item">
+                            <p>Deploy Applications: Use kubectl or tools like Helm to deploy your applications to the GKE cluster, leveraging container images from GCR.
+                                <a href="https://www.k8or.com/helm/index.html" class="qts ani"
+                                  target="_blank">
+                                  <img src="../design-v0-0-01-dir-k8d/popout-image-v0-0-01-fil.svg" alt="">
+                                </a>
+                              </p>
+                          </li>
+                        </ul>
+                      </inline-html>
+                    </div>
+
+                    <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
+                      <inline-html>
+                        <h2>Additional Resources:</h2>
+                      </inline-html>
+                    </div>
                       <ul class="tensorsite-list__items">
                         <li class="tensorsite-list__item">
-                          <p><code>Cloud Storage:</code> Object storage for unstructured data like backups and media.</p>
+                          <p><code>GCP Documentation:</code> The official documentation for each service offers detailed instructions and best practices.</p>
                         </li>
                         <li class="tensorsite-list__item">
-                          <p><code>Persistent Disk:</code> Block storage for persistent volumes attached to applications.</p>
+                          <p><code>GCP Quickstart Guides:</code> Various GCP services provide Getting Started guides that simplify initial setup.</p>
                         </li>
                         <li class="tensorsite-list__item">
-                          <p><code>Cloud Filestore:</code> Shared file system for containerized applications.</p>
+                          <p><code>GCP Codelabs:</code> Participate in free online hands-on labs to gain practical experience with various services.</p>
                         </li>
                       </ul>
 
-                      <p><code>Container Registry:</code> Store and manage container images securely with Google Container Registry (GCR). It integrates seamlessly with GKE deployments.</p>
-
-                      <h4>Deployment Steps:</h4>
-
-                      <p>Create a GCP Account: Sign up for a free tier account on GCP.</p>
-
-                      <p>Launch a GKE Cluster and set up a basic cluster using the Cloud Console or gcloud CLI.</p>
-
-                      <p>Configure Managed Services:</p>
-
+                    <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
+                      <inline-html>
+                        <h2>Remember:</h2>
+                      </inline-html>
+                    </div>
                       <ul class="tensorsite-list__items">
                         <li class="tensorsite-list__item">
-                          <p><code>Databases:</code> Create Cloud SQL or Spanner instances following their respective documentation.</p>
+                          <p>This is a high-level overview. Each service has its own configuration options and considerations.</p>
                         </li>
                         <li class="tensorsite-list__item">
-                          <p><code>CI/CD:</code> Set up a Cloud Build pipeline with necessary steps for code building, testing, and deployment to GKE.</p>
+                          <p>Start small and gradually add complexity as you become more comfortable with GCP and Kubernetes.</p>
                         </li>
                         <li class="tensorsite-list__item">
-                          <p><code>Messaging/Streaming:</code> Create a Cloud Pub/Sub topic and configure subscriptions as needed.</p>
+                          <p>Consider security best practices throughout the deployment process.</p>
                         </li>
                         <li class="tensorsite-list__item">
-                          <p><code>Service Mesh:</code> Enable Istio on your GKE cluster and configure service meshes for your applications.</p>
+                           <p>Leverage GCP documentation and support resources for further assistance.</p>
                         </li>
                         <li class="tensorsite-list__item">
-                          <p><code>API Gateway:</code> Create and configure Apigee API proxies for exposing your applications publicly or privately.</p>
+                          <p>By following these steps and utilizing the recommended managed services, you can build a robust and scalable Kubernetes cluster on GCP, even with limited prior experience.</p>
                         </li>
                         <li class="tensorsite-list__item">
-                          <p><code>Monitoring/Logging:</code> Install the Stackdriver Agent on your cluster nodes and configure Cloud Monitoring/Logging dashboards.</p>
-                        </li>
-                        <li class="tensorsite-list__item">
-                          <p><code>Storage:</code> Create appropriate storage volumes or file systems based on your application needs.</p>
-                        </li>
-                        <li class="tensorsite-list__item">
-                          <p><code>Container Registry:</code> Set up a GCR repository to store and manage your container images.</p>
+                           <p>Important Note: While the GCP service offerings are similar to other cloud providers, there are some key differences in naming and functionality. Be sure to carefully review the specific documentation for each service to ensure you understand its capabilities and limitations within the GCP ecosystem.</p>
                         </li>
                       </ul>
 
-                      <p>Deploy Applications: Use kubectl or tools like Helm to deploy your applications to the GKE cluster, leveraging container images from GCR.</p>
-
-                      <h4>Additional Resources:</h4>
-
-                      <p><code>GCP Documentation:</code> The official documentation for each service offers detailed instructions and best practices.</p>
-                      
-                      <p><code>GCP Quickstart Guides:</code> Various GCP services provide Getting Started guides that simplify initial setup.</p>
-                      
-                      <p><code>GCP Codelabs:</code> Participate in free online hands-on labs to gain practical experience with various services.</p>
-
-                      <h4>Remember:</h4>
-                      
-                      <p>This is a high-level overview. Each service has its own configuration options and considerations.</p>
-                      
-                      <p>Start small and gradually add complexity as you become more comfortable with GCP and Kubernetes.</p>
-                      
-                      <p>Consider security best practices throughout the deployment process.</p>
-                      
-                      <p>Leverage GCP documentation and support resources for further assistance.</p>
-                      
-                      <p>By following these steps and utilizing the recommended managed services, you can build a robust and scalable Kubernetes cluster on GCP, even with limited prior experience.</p>
-                      
-                      <p>Important Note: While the GCP service offerings are similar to other cloud providers, there are some key differences in naming and functionality. Be sure to carefully review the specific documentation for each service to ensure you understand its capabilities and limitations within the GCP ecosystem.</p>
-
-                      <h3>Mission accomplished! Now, let's go ahead and simplify your Kubernetes journey. Contact k8or.</h3>
                     <div class="cta-row" style="text-align: right;">
                       <div class="tensorsite-content more-left-tp">
                         <div class="tensorsite-content__cta-wrapper">
@@ -1622,6 +1901,28 @@
             </div>
           </div>
           </div>
+          <div class="tensorsite-group__divider"></div>
+          <devsite-content>
+            <div class="content-wrap" style="padding-top: 0px;">
+              <div class="section" id="blog">
+                <div class="widget Blog" data-version="1" id="Blog1">
+                  <div class="tensorsite-container">
+                    <div class="tensorsite-detail">
+                      <div class="tensorsite-detail__body">
+                        <a name="more"></a>
+                        <p class="animated-title"
+                          aria-label="Mission accomplished! Now, let's go ahead and simplify your Kubernetes journey. Contact k8or.">
+                          <a href="https://www.k8or.com/contact/index.html" class="qts ani"
+                            target="_blank"><img style="width: 21px;"
+                              src="../design-v0-0-01-dir-k8d/popout-image-v0-0-01-fil.svg" alt=""></a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </devsite-content>
 
           <section #="" analytics="" anchors=""
             class="tensorsite-group tensorsite-group--single-card tensorsite-group--has-top-divider"
@@ -1816,6 +2117,61 @@
   </script>
   <devsite-a11y-announce></devsite-a11y-announce>
 </body>
+<script>
+  let animationContainer = document.querySelector('.animated-title');
+  let textData = animationContainer.getAttribute('aria-label');
+
+  function splitWords() {
+    let splitedText = textData.split(' ');
+
+    splitedText.join('& &').split('&').forEach(function (e) {
+      let span = document.createElement('span');
+      span.classList.add('animated-word');
+      span.setAttribute('data-text', e);
+      animationContainer.appendChild(span);
+    });
+    splitLetters();
+  }
+  splitWords()
+
+
+  function splitLetters() {
+    let animatedWords = document.querySelectorAll('.animated-word');
+    animatedWords.forEach(function (e, i) {
+      e.getAttribute('data-text').split('').forEach(function (f, j) {
+        f = f == ' ' ? '&#32;' : f;
+        let span = document.createElement('span');
+        span.classList.add('animated-element');
+        span.setAttribute('aria-hidden', 'true');
+        span.innerHTML = f;
+        e.appendChild(span);
+      });
+      animate(e, i);
+    })
+  }
+
+  function animate(e, i) {
+    let wordCount = e.getAttribute('data-text').length;
+    e.style.opacity = 1;
+    e.classList.add('animate');
+  }
+
+  setTimeout(() => {
+    $("p.animated-title > a").appendTo("p.animated-title");
+  }, 2000)
+
+  // Replay Button - For Demo purpose only
+  function replay() {
+    let animatedWords = document.querySelectorAll('.animated-word');
+    animatedWords.forEach(function (e, i) {
+      e.classList.remove('animate');
+      e.style.opacity = 0;
+      setTimeout(() => {
+        animate(e, i);
+      }, 500);
+    })
+  }
+</script>
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script type="text/javascript">
   var slider = $('.slider-container');
