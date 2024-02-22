@@ -1521,7 +1521,7 @@
 
                       <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
                         <inline-html>
-                          <p>The first level of k8orization - OS k8orization, focusing on optimizing the base operating system (OS) Docker image for Kubernetes deployments. We'll explore its purpose, benefits, and differences compared to standard Docker images.
+                          <p>The first level of k8orization - OS k8orization, focusing on optimizing the operating system (OS) Docker image for Kubernetes deployments. We'll explore its purpose, benefits, and differences compared to standard Docker images.
                             <a href="../design-v0-0-01-dir-k8d/osy-hgr-v0-0-01-fil.pdf#zoom=300" class="qts ani"
                               target="_blank"><img style="width: 21px;"
                               src="../design-v0-0-01-dir-k8d/popout-image-v0-0-01-fil.svg" alt="">
@@ -1538,8 +1538,7 @@
 
                       <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
                         <inline-html>
-                          <p>It's a process of transforming a pre-built Docker image, like Ubuntu or CentOS, into a lean and
-                        secure foundation for K8s deployments. This involves multiple steps:</p>
+                          <p>It's a process of transforming a pre-built Docker image, like Ubuntu or CentOS, into a lean and secure foundation for K8s deployments. This involves multiple steps:</p>
                         </inline-html>
                       </div>
 
@@ -1551,13 +1550,10 @@
 
                       <ul class="tensorsite-list__items">
                         <li class="tensorsite-list__item">
-                          <p><code>Users and Groups:</code> Redundant user and group entries are purged from several
-                            files like /etc/passwd, /etc/group, and /etc/shadow, minimizing potential attack vectors and
-                            reducing image size. </p>
+                          <p><code>Users and Groups:</code> Redundant user and group entries are purged from several files like /etc/passwd, /etc/group, and /etc/shadow, minimizing potential attack vectors and reducing image size. </p>
                         </li>
                         <li class="tensorsite-list__item">
-                          <p><code>Files and Packages:</code> Unneeded OS related files and packages are eliminated,
-                            further shrinking the image and optimizing resource utilization. </p>
+                          <p><code>Files and Packages:</code> Unneeded OS related files and packages are eliminated, further shrinking the image and optimizing resource utilization. </p>
                         </li>
                       </ul>
 
@@ -1569,8 +1565,7 @@
 
                       <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
                         <inline-html>
-                          <p>Dedicated users with minimal privileges are created specifically for k8or operations, enhancing
-                        security and preventing unauthorized access.</p>
+                          <p>Dedicated users with minimal privileges are created specifically for k8or operations, enhancing security and preventing unauthorized access.</p>
                         </inline-html>
                       </div>
 
@@ -1582,16 +1577,13 @@
 
                       <ul class="tensorsite-list__items">
                         <li class="tensorsite-list__item">
-                          <p><code>Strict System Call Restrictions:</code> Processes are limited to authorized system
-                            calls, effectively blocking unauthorized actions and bolstering system integrity.</p>
+                          <p><code>Strict System Call Restrictions:</code> Processes are limited to authorized system calls, effectively blocking unauthorized actions and bolstering system integrity.</p>
                         </li>
                         <li class="tensorsite-list__item">
-                          <p><code>Unique User IDs and GIDs:</code> K8s users possess unique identifiers, further
-                            isolating potential security breaches.</p>
+                          <p><code>Unique User IDs and GIDs:</code> K8s users possess unique identifiers, further isolating potential security breaches.</p>
                         </li>
                         <li class="tensorsite-list__item">
-                          <p><code>Process Termination:</code> Unauthorized system calls trigger process termination,
-                            actively addressing security threats.</p>
+                          <p><code>Process Termination:</code> Unauthorized system calls trigger process termination, actively addressing security threats.</p>
                         </li>
                         <!--li class="tensorsite-list__item">
                           <p>In certain cases, C or Python abstraction layers as part of this process.</p>
@@ -1606,35 +1598,25 @@
 
                       <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
                         <inline-html>
-                          <p>This step introduces a C or Python abstraction layer and acting as a bridge between the OS base and the underlying K8s infrastructure. The key purpose of this layer is to enhance security, portability, and extensibility, simplifying integration with various cluster-native tools and services:</p>
+                          <p>This step introduces a C, Python or Go abstraction layer and acting as a bridge between the OS and the underlying K8s infrastructure. The key purpose of this layer is to enhance security, portability, and extensibility, simplifying integration with various cluster-native tools and services:</p>
                         </inline-html>
                       </div>
 
                       <ul class="tensorsite-list__items">
                         <li class="tensorsite-list__item">
-                          <p><code>Universal Compatibility:</code> The abstraction layer decouples the application from
-                            the specifics of the underlying OS base, enabling seamless deployment across different K8s
-                            environments.</p>
+                          <p><code>Universal Compatibility:</code> The abstraction layer decouples the application from the specifics of the underlying OS, enabling seamless deployment across different K8s environments.</p>
                         </li>
                         <li class="tensorsite-list__item">
-                          <p><code>Automated Configuration Management:</code> Imagine your K8s cluster as a complex
-                            ecosystem with tools like secret management, DNS configuration, and network connectivity
-                            providers. This OS abstraction layer can act as a "smart orchestrator", automatically enabling OS configurations for products,
-                            tools, and services.</p>
+                          <p><code>Automated Configuration Management:</code> Imagine your K8s cluster as a complex ecosystem with tools like secret management, DNS configuration, and network connectivity providers. This OS abstraction layer can act as a "smart orchestrator", automatically enabling OS configurations for products, tools, and services.</p>
                         </li>
                         <li class="tensorsite-list__item">
-                          <p><code>Simplified Maintenance and Upgrades:</code> With streamlined configurations managed
-                            by the OS abstraction layer, updates and maintenance become easier. </p>
+                          <p><code>Simplified Maintenance and Upgrades:</code> With streamlined configurations managed by the OS abstraction layer, updates and maintenance become easier. </p>
                         </li>
                         <li class="tensorsite-list__item">
-                          <p><code>Improved Operational Efficiency:</code> By automating tedious OS configuration tasks,
-                            human intervention is minimized, freeing up your team to focus on other higher-level development
-                            and operational activities.</p>
+                          <p><code>Improved Operational Efficiency:</code> By automating tedious OS configuration tasks, human intervention is minimized, freeing up your team to focus on other higher-level development and operational activities.</p>
                         </li>
                         <li class="tensorsite-list__item">
-                          <p>Think of this OS abstraction layer as a "universal OS translator" for your K8s environment. It
-                            takes away the burden of intricate OS configurations and interdependencies, leaving you with a secure,
-                            flexible, portable, and easily maintainable OS layer for your K8s ecosystem.</p>
+                          <p>Think of this OS abstraction layer as a "universal OS translator" for your K8s environment. It takes away the burden of intricate OS configurations and interdependencies, leaving you with a secure, flexible, portable, and easily maintainable OS layer for your K8s ecosystem.</p>
                         </li>
                       </ul>
 
@@ -1807,23 +1789,19 @@
 
                       <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
                         <inline-html>
-                          <p>Standard Docker images contain unnecessary elements like unused user accounts, pre-installed packages not relevant to your application, and extraneous files. This adds unnecessary weight and potential security vulnerabilities. k8orization tackles these issues by: </p>
+                          <p>Standard Docker images contain unnecessary elements like unused user accounts, pre-installed packages not relevant to your application, and extraneous files. This adds unnecessary weight and potential security vulnerabilities. Level 1 k8orization tackles these issues by: </p>
                         </inline-html>
                       </div>
 
                       <ul class="tensorsite-list__items">
                         <li class="tensorsite-list__item">
-                          <p><code>Reducing Image Size:</code> Smaller images mean faster downloads, quicker
-                            deployments, and lower storage costs.</p>
+                          <p><code>Reducing Image Size:</code> Smaller images mean faster downloads, quicker deployments, and lower storage costs.</p>
                         </li>
                         <li class="tensorsite-list__item">
-                          <p><code>Enhanced Security:</code> By removing unused elements and implementing K8s-specific
-                            users, the attack surface shrinks, leading to a more secure environment.</p>
+                          <p><code>Enhanced Security:</code> By removing unused elements and implementing K8s-specific users, the attack surface shrinks, leading to a more secure environment.</p>
                         </li>
                         <li class="tensorsite-list__item">
-                          <p><code>Optimized Product Utilization:</code> Smaller images consume less CPU, memory, and
-                            disk space within your Kubernetes cluster, leading to improved performance and
-                            cost-efficiency.</p>
+                          <p><code>Optimized Product Utilization:</code> Smaller images consume less CPU, memory, and disk space within your Kubernetes cluster, leading to improved performance and cost-efficiency.</p>
                         </li>
                       </ul>
 
@@ -1841,12 +1819,10 @@
 
                       <ul class="tensorsite-list__items">
                         <li class="tensorsite-list__item">
-                          <p><code>Streamlined Deployments:</code> Smaller images download and start faster, minimizing
-                            deployment times.</p>
+                          <p><code>Streamlined Deployments:</code> Smaller images download and start faster, minimizing deployment times.</p>
                         </li>
                         <li class="tensorsite-list__item">
-                          <p><code>Improved Scalability:</code> Smaller images allow for denser deployments within your
-                            cluster, maximizing resource utilization.</p>
+                          <p><code>Improved Scalability:</code> Smaller images allow for denser deployments within your cluster, maximizing resource utilization.</p>
                         </li>
                         <li class="tensorsite-list__item">
                           <p><code>Enhanced Security Posture:</code> The focus on minimal footprint and strict security
@@ -1866,25 +1842,22 @@
 
                       <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
                         <inline-html>
-                          <p>k8orized OS images differ from standard Docker images in several ways:</p>
+                          <p>k8orized OS images differ from standard Docker images in multiple ways:</p>
                         </inline-html>
                       </div>
 
                       <ul class="tensorsite-list__items">
                         <li class="tensorsite-list__item">
-                          <p><code>Specificity:</code> They are tailored for K8s environments, focusing on security and
-                            resource optimization within that context.</p>
+                          <p><code>Specificity:</code> They are tailored for K8s environments, focusing on security and resource optimization within that context.</p>
                         </li>
                         <li class="tensorsite-list__item">
-                          <p><code>Minimalistic Footprint:</code> They contain only the essential elements needed for
-                            K8s operations, leading to smaller image sizes.</p>
+                          <p><code>Minimalistic Footprint:</code> They contain only the essential elements needed for K8s operations, leading to smaller image sizes.</p>
                         </li>
                         <li class="tensorsite-list__item">
-                          <p><code>Enhanced Security:</code> They implement specific security measures like user
-                            isolation and system call restrictions, making them more secure for K8s deployments.</p>
+                          <p><code>Enhanced Security:</code> They implement specific security measures like user isolation and system call restrictions, making them more secure for K8s deployments.</p>
                         </li>
                         <li class="tensorsite-list__item">
-                          <p><code>Abstraction Layer:</code> They involve creating a C or Python layer to interact with the underlying OS.</p>
+                          <p><code>Abstraction Layer:</code> They involve creating a C, Python or Go layer to interact with the underlying OS.</p>
                         </li>
                       </ul>
 

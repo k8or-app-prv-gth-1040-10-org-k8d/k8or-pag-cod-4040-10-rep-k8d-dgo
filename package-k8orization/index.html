@@ -1519,7 +1519,7 @@
 
                       <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
                         <inline-html>
-                          <p>Building upon the foundation laid by Level 1 k8orization, Level 2 dives deeper, focusing on Package Layer k8orization. This process targets the pre-installed packages within the base OS image, further refining and optimizing them for Kubernetes deployments.
+                          <p>Building upon the foundation laid by Level 1 k8orization, Level 2 dives deeper, focusing on Package Layer k8orization. This process targets the pre-installed packages within the OS image, further refining and optimizing them for Kubernetes deployments.
                             <a href="../design-v0-0-01-dir-k8d/pkg-hgr-v0-0-01-fil.pdf#zoom=300" class="qts ani"
                               target="_blank"><img style="width: 21px;"
                               src="../design-v0-0-01-dir-k8d/popout-image-v0-0-01-fil.svg" alt="">
@@ -1548,7 +1548,7 @@
 
                       <ul class="tensorsite-list__items">
                         <li class="tensorsite-list__item">
-                          <p><code>Unnecessary Component Removal:</code> Redundant files, configurations, and documentation within package installations are eliminated, significantly reducing image size and minimizing potential attack vectors.</p>
+                          <p><code>Unnecessary Component Removal:</code> Redundant files, configurations, and documentation within package installations are eliminated, reducing image size and minimizing potential attack vectors.</p>
                         </li>
                         <li class="tensorsite-list__item">
                           <p><code>Library Trimming:</code> Unused libraries and dependencies within packages are identified and removed, further shrinking the image footprint and optimizing resource utilization.</p>
@@ -1572,31 +1572,31 @@
 
                       <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
                         <inline-html>
-                          <h3>3. Abstraction Layer with Infrastructure Integration</h3>
+                          <h3>3. Abstraction Layer with Infrastructure Integration:</h3>
                         </inline-html>
                       </div>
 
                       <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
                         <inline-html>
-                          <p>This step introduces a C or Python abstraction layer and acting as a bridge between the OS and the underlying K8s infrastructure. The key purpose of this layer is to enhance portability and extensibility, simplifying integration with various cluster-native tools and services:</p>
+                          <p>This step introduces a C, Python or Go abstraction layer and acting as a bridge between the Package and the underlying K8s infrastructure. The key purpose of this layer is to enhance security, portability, and extensibility, simplifying integration with various cluster-native tools and services:</p>
                         </inline-html>
                       </div>
 
                       <ul class="tensorsite-list__items">
                         <li class="tensorsite-list__item">
-                          <p><code>Universal Compatibility:</code> The abstraction layer decouples the application from the specifics of the underlying OS, enabling seamless deployment across different K8s environments.</p>
+                          <p><code>Universal Compatibility:</code> The abstraction layer decouples the application from the specifics of the underlying Package, enabling seamless deployment across different K8s environments.</p>
                         </li>
                         <li class="tensorsite-list__item">
-                          <p><code>Automated Configuration Management:</code> Imagine your K8s cluster as a complex ecosystem with tools like secret management, DNS configuration, and network connectivity providers. This layer can act as a "smart orchestrator," automatically configuring these tools and services upon deployment of a specific application (e.g., Teller for Kubernetes).</p>
+                          <p><code>Automated Configuration Management:</code> Imagine your K8s cluster as a complex ecosystem with tools like secret management, DNS configuration, and network connectivity providers. This Package abstraction layer can act as a "smart orchestrator", automatically enabling Package configurations for products, tools, and services.</p>
                         </li>
                         <li class="tensorsite-list__item">
-                          <p><code>Simplified Maintenance and Upgrades:</code> With streamlined configurations managed by the abstraction layer, updates and maintenance become significantly easier. Imagine one-click upgrades for your entire interdependent K8s ecosystem.</p>
+                          <p><code>Simplified Maintenance and Upgrades:</code> With streamlined configurations managed by the Package abstraction layer, updates and maintenance become easier.</p>
                         </li>
                         <li class="tensorsite-list__item">
-                          <p><code>Improved Operational Efficiency:</code> By automating tedious configuration tasks, human intervention is minimized, freeing up your team to focus on higher-level development and operational activities.</p>
+                          <p><code>Improved Operational Efficiency:</code> By automating tedious Package configuration tasks, human intervention is minimized, freeing up your team to focus on other higher-level development and operational activities.</p>
                         </li>
                         <li class="tensorsite-list__item">
-                          <p>Think of this abstraction layer as a "universal translator" for your K8s environment. It takes away the burden of intricate configurations and interdependencies, leaving you with a flexible, portable, and easily maintainable application ecosystem.</p>
+                          <p>Think of this Package abstraction layer as a "universal package translator" for your K8s environment. It takes away the burden of intricate Package configurations and interdependencies, leaving you with a secure, flexible, portable, and easily maintainable Package layer for your K8s ecosystem.</p>
                         </li>
                       </ul>
 
@@ -1839,7 +1839,7 @@
 
                       <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
                         <inline-html>
-                          <p>Standard OS images package software with unnecessary components, including documentation, legacy files, and unused libraries. This adds unnecessary weight and introduces potential vulnerabilities. Level 2 k8orization addresses these issues by:</p>
+                          <p>Standard Docker images package software with unnecessary components, including documentation, legacy files, and unused libraries. This adds unnecessary weight and introduces potential vulnerabilities. Level 2 k8orization addresses these issues by:</p>
                         </inline-html>
                       </div>
 
@@ -1893,16 +1893,16 @@
 
                       <div class="tensorsite-content__description" style="width: 100%; margin: 30px 0 10px 0;">
                         <inline-html>
-                          <p>k8orized package layers differentiate themselves from standard images in several ways:</p>
+                          <p>k8orized package layers differentiate themselves from standard Docker images in multiple ways:</p>
                         </inline-html>
                       </div>
 
                       <ul class="tensorsite-list__items">
                         <li class="tensorsite-list__item">
-                          <p><code>Targeted Optimization:</code> They carefully analyze and remove unnecessary elements within packages, leading to a highly optimized footprint.</p>
+                          <p><code>Targeted Optimization:</code> They analyze and remove unnecessary elements within packages, leading to a highly optimized footprint.</p>
                         </li>
                         <li class="tensorsite-list__item">
-                          <p><code>Enhanced Security Focus:</code> System call restrictions and application-level logging go beyond standard images, resulting in a more secure environment.</p>
+                          <p><code>Enhanced Security Focus:</code> System call restrictions and application-level logging go beyond standard Docker images, resulting in a secure environment.</p>
                         </li>
                         <li class="tensorsite-list__item">
                           <p><code>Kubernetes-Specific Design:</code> They are explicitly tailored for K8s deployments, considering resource utilization and security within that context.</p>
