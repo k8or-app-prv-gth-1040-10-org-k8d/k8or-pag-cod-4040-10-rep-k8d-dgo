@@ -370,6 +370,9 @@
     .qts.ani img {
       margin: 0;
     }
+    body[layout=full] devsite-code {
+      overflow: hidden;
+    }
   </style>
 </head>
 
@@ -2345,7 +2348,7 @@
                           </li>
                         </ul>
                         <p><strong>Python Code for the Developer</strong>:</p>
-                        <pre><code class="language-python" style="width: 100%; margin: 30px 0 10px 0;">yaml_config = &quot;&quot;&quot;
+                        <pre><code class="language-python">yaml_config = &quot;&quot;&quot;
                              vpc:
                                name: MyNewVPC
                                cidr: 10.0.0.0/16
@@ -2355,7 +2358,7 @@
                           </code>
                         </pre>
                         <p>Post deployment, the <code>tBOT</code> immediately checks the configuration:</p>
-                        <pre><code class="language-python" style="width: 70%; margin: 30px 0 10px 0;"># tBOT Validation
+                        <pre><code class="language-python" ># tBOT Validation
                              def validate_vpc(vpc_id):
                                  # Ensure VPC is not publicly accessible, etc.
                                  ...
@@ -2370,7 +2373,7 @@
                             <li class="tensorsite-list__item">
                               <p>Consider that an external actor or even an internal team member accidentally modifies the security group of an EC2 instance. The <code>sBOT</code> detects this change.</p>
                             </li>
-                            <pre><code class="language-python" style="width: 100%; margin: 30px 0 10px 0;"># sBOT monitoring
+                            <pre><code class="language-python"># sBOT monitoring
                                  def monitor_security_group(sg_id):
                                      current_state = get_current_state(sg_id)
                                      if current_state != saved_state:
@@ -2387,7 +2390,7 @@
                               <li class="tensorsite-list__item">
                                 <p>Suppose the organization has a scheduled maintenance every month. The <code>mBOT</code> can be programmed to handle this:</p>
                               </li>
-                                <pre><code class="language-python" style="width: 100%; margin: 30px 0 10px 0;">import schedule
+                                <pre><code class="language-python">import schedule
                                  def monthly_maintenance():
                                      # mBOT tasks
                                      mBOT.update_resources()
@@ -2405,7 +2408,7 @@
                               <li class="tensorsite-list__item">
                                 <p>An application is expected to receive high traffic. The team wants to be alerted if the traffic surpasses 80% of the allocated resources.</p>
                               </li>
-                                <pre><code class="language-python" style="width: 100%; margin: 30px 0 10px 0;"># nBOT alerting
+                                <pre><code class="language-python"># nBOT alerting
                                      def check_resource_usage(resource_id):
                                          usage = get_resource_usage(resource_id)
                                          if usage &gt; 80:
