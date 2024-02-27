@@ -31,3 +31,114 @@ Additional Resources:
 * AWS Documentation: The official documentation for each service offers detailed instructions and best practices.
 * AWS Getting Started Guides: Various AWS services provide Getting Started guides that simplify initial setup.
 * AWS Workshops: Participate in free online or in-person workshops from AWS to gain hands-on experience with various services.
+
+----------------------
+Kubernetes extensively utilizes custom controllers to facilitate integration with various cloud providers. These custom controllers enable k8s to interact with cloud-specific services and resources, extending its functionality and management capabilities within different cloud environments.
+
+How it works:
+
+    Introduction:
+
+        The AWS Controllers for Kubernetes (ACK) project aims to simplify managing AWS resources within Kubernetes clusters. This is achieved by enabling users to define the desired state of AWS resources using the familiar Kubernetes API and configuration language. 
+
+    Functionality:
+
+        At its core, the ACK framework leverages custom resources (CRs) within Kubernetes. These CRs represent the desired state of corresponding AWS resources, such as Amazon S3 buckets or, in this specific case, DynamoDB tables.
+
+    Workflow:
+
+        1. User configuration: A Kubernetes user, like Kira in the example, defines a CR within a manifest file. This CR details the desired configuration for the DynamoDB table, including attributes, capacity units, and access control.
+
+        2. Kubernetes API server: Kira applies the manifest file using `k apply`. The Kubernetes API server validates the CR and verifies user permissions.
+
+        3. CR creation: Upon successful validation and authorization, the API server stores the CR in its etcd data store.
+
+        4. ACK DynamoDB controller notification: Running within a standard Kubernetes pod on a worker node, the ACK DynamoDB controller is notified about the newly created CR.
+
+        5. AWS interaction: The ACK DynamoDB controller interacts with the AWS DynamoDB API, calling the `CreateTable` operation to provision the table in the user's AWS account based on the CR specifications.
+
+        6. Status update: After successful table creation, the ACK controller updates the CR's `Status` field within the Kubernetes API server, reflecting the actual state of the table in AWS.
+
+    Drift Detection and Remediation:
+
+        ACK implements mechanisms to detect and address situations where the desired configuration (defined in the CR) and the actual state of the AWS resource diverge. This can happen due to manual modifications outside of ACK, through tools like the AWS CLI or console. The ACK DynamoDB controller periodically checks for such discrepancies (drift) and attempts to rectify them by reconfiguring the DynamoDB table based on the latest CR specifications. The default drift detection interval is 10 hours, but this can be customized.
+
+    Benefits:
+
+        By leveraging ACK, users can manage their entire application ecosystem, including both Kubernetes and AWS resources, through a unified interface. This streamlines infrastructure management and simplifies resource provisioning and configuration.
+
+    Available Custom Controllers for Cloud Provider Integration:
+    
+        - Amazon ACM: AWS ACM controller is a service controller for managing ACM resources in Kubernetes
+
+        - Amazon ACM PCA: AWS ACM PCA controller is a service controller for managing ACM PCA resources in Kubernetes
+
+        - Amazon API Gateway v2: AWS API Gateway v2 controller is a service controller for managing API Gateway v2 resources in Kubernetes
+
+        - Amazon Application Auto Scaling: AWS Application Auto Scaling controller is a service controller for managing Application Auto Scaling resources in Kubernetes
+
+        - Amazon CloudFront: AWS CloudFront controller is a service controller for managing CloudFront resources in Kubernetes
+
+        - Amazon CloudTrail: AWS CloudTrail controller is a service controller for managing CloudTrail resources in Kubernetes
+
+        - Amazon CloudWatch: AWS CloudWatch controller is a service controller for managing CloudWatch resources in Kubernetes
+
+        - Amazon CloudWatch Logs: AWS CloudWatch Logs controller is a service controller for managing CloudWatch Logs resources in Kubernetes
+
+        - Amazon DynamoDB: AWS DynamoDB controller is a service controller for managing DynamoDB resources in Kubernetes
+
+        - Amazon EC2: AWS EC2 controller is a service controller for managing EC2 resources in Kubernetes
+
+        - Amazon ECR: AWS ECR controller is a service controller for managing ECR resources in Kubernetes
+
+        - Amazon EKS: AWS EKS controller is a service controller for managing EKS resources in Kubernetes
+
+        - Amazon Elastic File System (Amazon EFS): AWS EFS controller is a service controller for managing EFS resources in Kubernetes
+
+        - Amazon ElastiCache: AWS ElastiCache controller is a service controller for managing ElastiCache resources in Kubernetes
+
+        - Amazon EMR on EKS: AWS EMR on EKS controller is a service controller for managing EMR on EKS resources in Kubernetes
+
+        - Amazon EventBridge: AWS EventBridge controller is a service controller for managing EventBridge resources in Kubernetes
+
+        - Amazon IAM: AWS IAM controller is a service controller for managing IAM resources in Kubernetes
+
+        - Amazon Kafka: AWS Kafka controller is a service controller for managing Kafka resources in Kubernetes
+
+        - Amazon Keyspaces: AWS Keyspaces controller is a service controller for managing Keyspaces resources in Kubernetes
+
+        - Amazon Kinesis: AWS Kinesis controller is a service controller for managing Kinesis resources in Kubernetes
+
+        - Amazon KMS: AWS KMS controller is a service controller for managing KMS resources in Kubernetes
+
+        - Amazon Lambda: AWS Lambda controller is a service controller for managing Lambda resources in Kubernetes
+
+        - Amazon MQ: AWS MQ controller is a service controller for managing MQ resources in Kubernetes
+
+        - Amazon Network Firewall: AWS Network Firewall controller is a service controller for managing Network Firewall resources in Kubernetes
+
+        - Amazon OpenSearch Service: AWS OpenSearch Service controller is a service controller for managing OpenSearch Service resources in Kubernetes
+
+        - Amazon Pipes: AWS Pipes controller is a service controller for managing Pipes resources in Kubernetes
+
+        - Amazon Prometheus: AWS Prometheus controller is a service controller for managing Prometheus resources in Kubernetes
+
+        - Amazon RDS: AWS RDS controller is a service controller for managing RDS resources in Kubernetes
+
+        - Amazon Route53: AWS Route53 controller is a service controller for managing Route53 resources in Kubernetes
+
+        - Amazon Route53Resolver: AWS Route53Resolver controller is a service controller for managing Route53Resolver resources in Kubernetes
+
+        - Amazon S3: AWS S3 controller is a service controller for managing S3 resources in Kubernetes
+
+        - Amazon SageMaker: ACK service controller for Amazon SageMaker manages SageMaker resources in Kubernetes
+
+        - Amazon Secrets Manager: AWS Secrets Manager controller is a service controller for managing Secrets Manager resources in Kubernetes
+
+        - Amazon SNS: AWS SNS controller is a service controller for managing SNS resources in Kubernetes
+
+        - Amazon SQS: AWS SQS controller is a service controller for managing SQS resources in Kubernetes
+
+        - Amazon Step Functions: AWS Step Functions controller is a service controller for managing Step Functions resources in Kubernetes
+
+        - MemoryDB: Amazon MemoryDB for Redis controller is a service controller for managing MemoryDB resources in Kubernetes
